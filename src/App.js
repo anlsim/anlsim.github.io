@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <NavBar />
-   <h1>Andrea's Portfolio</h1>
+   
    </>
   );
 }

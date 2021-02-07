@@ -1,18 +1,35 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 
-const NavBar = () => (
-    <>
-    <Navbar bg="light" variant="light">
-        <Navbar.Brand href="/">Travel Blog</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/resume">Resume</Nav.Link>
-          <Nav.Link href="/projects">Projects</Nav.Link>
-          <Nav.Link href="/education">Education</Nav.Link>
-        </Nav>
-      </Navbar>
-        </>
+const NavBar = () => {
+
+    return (
+        <nav className ="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">AS</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Resume</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Education</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
     );
+}
+
+    
     export default NavBar;
