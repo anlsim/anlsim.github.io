@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/DirectoryMenu.scss';
-import MenuItem from '../components/MenuItem';
+import '../styles/Project.scss';
+import Project from '../components/Project';
 
 class ProjectsPage extends Component {
     constructor(){
@@ -8,16 +9,19 @@ class ProjectsPage extends Component {
         this.state ={
             sections:  [{
                 title: 'Web Marks',
+                description: 'Comming soon',
                 imageUrl: 'commingsoon',
                 id: 1
             },
             {
                 title: 'Task Tracker',
+                description: 'Comming soon',
                 imageUrl: 'commingsoon',
                 id: 2
             },
             {
                 title: 'Photography Portfolio',
+                description: 'Comming soon',
                 imageUrl: 'commingsoon',
                 id: 3
             },
@@ -28,16 +32,20 @@ class ProjectsPage extends Component {
     }
     render(){
         return(
+           
             <div className= 'directory-menu'>
                
                 {
-                    this.state.sections.map(({title, imageUrl, id}) => (
-                        <MenuItem key={id} title={title}/>
+                    this.state.sections.map(({title, imageUrl, id, description}) => (
+                        <Project key={id} title={title} description={description}/>
+                
                     ))
                 }
               
             </div>
+           
         );
+
     }
 }
 
