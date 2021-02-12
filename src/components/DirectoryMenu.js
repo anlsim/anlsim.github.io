@@ -9,17 +9,20 @@ class DirectoryMenu extends Component {
             sections:  [{
                 title: 'Resume',
                 imageUrl: 'commingsoon',
-                id: 1
+                id: 1,
+                linkUrl: 'resume'
             },
             {
                 title: 'Projects',
                 imageUrl: 'commingsoon',
-                id: 2
+                id: 2,
+                linkUrl: 'projects'
             },
             {
                 title: 'Contact',
                 imageUrl: 'commingsoon',
-                id: 3
+                id: 3,
+                linkUrl: 'contact'
             },
 
 
@@ -31,8 +34,8 @@ class DirectoryMenu extends Component {
             <div className= 'directory-menu'>
                
                 {
-                    this.state.sections.map(({title, imageUrl, id}) => (
-                        <MenuItem key={id} title={title}/>
+                    this.state.sections.map(({id, ...SectionProps}) => (
+                        <MenuItem key={id} {...SectionProps}/>
                     ))
                 }
               
