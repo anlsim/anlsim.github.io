@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 
 const ResumePage = () => {
     return (
         <div>
-            
         </div>
     )
 }
 
-export default ResumePage
+export default ResumePage;

@@ -11,7 +11,7 @@ import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
-import ResumePage from './pages/ContactPage';
+import ResumePage from './pages/ResumePage';
 import AboutMePage from './pages/AboutMePage';
 
 function App() {
