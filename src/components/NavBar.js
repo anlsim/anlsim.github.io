@@ -13,6 +13,7 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <div className='options'>
+                  <Link className='option' to="/About">About Me</Link>
                   <Link className='option' to="/Resume">Resume</Link>
                   
                   <Link className='option' to="/projects">Projects</Link>
