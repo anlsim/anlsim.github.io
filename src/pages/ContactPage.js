@@ -11,28 +11,33 @@ import { faPhoneSquareAlt, faEnvelope, faLink } from '@fortawesome/free-solid-sv
 
 const ContactPage = () => {
     return (
-        <Container>
-  <Row>
-    <Col sm={8}>
-        <h1>Andrea</h1>
-    </Col>
-    <Col sm={4}>
-        <h1>Contact Me</h1>
-        <ListGroup>
-            <ListGroup.Item>
+        <>
+    <container>
+        <div>
+            <div>
+            <h1>Andrea</h1>
+            </div>
+            <div>
+            <h1>Contact Me</h1>
+            <ul>
+                <li>
                 <FontAwesomeIcon icon={faPhoneSquareAlt} />
-                 123-453-9876
-            </ListGroup.Item>
-            <ListGroup.Item>
-            <FontAwesomeIcon icon={faEnvelope} />
-            email</ListGroup.Item>
-            <ListGroup.Item>
-            <FontAwesomeIcon icon={faLink} />LinkedIn</ListGroup.Item>
-        </ListGroup>
-    </Col>
-  </Row>
- 
-</Container>
+                123-453-9876
+                </li>
+                <li>
+                <FontAwesomeIcon icon={faEnvelope} />
+                email
+                </li>
+                <li>
+                <FontAwesomeIcon icon={faLink} />LinkedIn
+                </li>
+            </ul>
+            </div>
+           
+            </div>
+    </container>
+    </>
+         
     )
 }
 

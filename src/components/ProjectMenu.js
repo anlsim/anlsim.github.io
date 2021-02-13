@@ -9,8 +9,8 @@ class ProjectMenu extends Component {
             sections:  [{
                 
                 title: 'Web Marks',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue eu.',
-                imageUrl: 'commingsoon',
+                description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
+                imageUrl: '../assets/webMarks.png',
                 id: 1,
                 gitUrl:'',
                 linkUrl:'',
@@ -20,8 +20,8 @@ class ProjectMenu extends Component {
             {
                 
                 title: 'Task Tracker',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue eu.',
-                imageUrl: 'commingsoon',
+                description: 'Team project to build a web application to help organize and keep track of tasks. Redesigned the View. Added new features to optimize the project.',
+                imageUrl: "../assets/taskTracker.png",
                 id: 2,
                 gitUrl:'',
                 linkUrl:'',
@@ -31,7 +31,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Photography Portfolio',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue eu.',
-                imageUrl: 'commingsoon',
+                imageUrl: '../assets/asWebsite.png',
                 id: 3,
                 gitUrl:'',
                 linkUrl:'',

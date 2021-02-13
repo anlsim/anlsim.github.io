@@ -6,7 +6,12 @@ const Project = ({title, description, history, linkUrl, imgUrl, gitUrl}) => (
         <>
         <main className='flex'></main>
         <article className = 'card'>
-        <img src={imgUrl} alt="project image" class="card-header" />
+
+            <div className='card-img' style={{
+        backgroundImage: `url(${imgUrl})`
+      }}/>
+
+            
             <div className = 'card-body'>
                 <h1 className ='card-body-name'>{title}</h1>
                 <p className ='card-body-description'>{description}</p>
