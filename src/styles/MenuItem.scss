@@ -18,6 +18,12 @@
     align-items: center;
     margin: 0 7.5px 15px;
 
+    &:hover {
+        cursor: pointer;
+        & .content {
+            opacity: 0.5;
+          }
+    }
     .content{
         height: 90px;
         padding: 0 25px;
