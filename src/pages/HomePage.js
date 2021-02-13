@@ -11,8 +11,10 @@ const HomePage = () => {
                 <p className= 'text-description'>I'm a Sofware Developer that believes in building things for enviromental, social and economic good.</p>
             </div>
        
-            
-            <DirectoryMenu/>
+            <div>
+                <DirectoryMenu/>
+            </div>
+           
             
             
         </div>

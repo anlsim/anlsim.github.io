@@ -1,3 +1,5 @@
+
+
 .hex:before {
     content: "";
     width: 0; height: 0;
@@ -17,12 +19,31 @@
     justify-content: center;
     align-items: center;
     margin: 0 7.5px 15px;
-
+    
+    
     &:hover {
         cursor: pointer;
         & .content {
             opacity: 0.5;
           }
+    }
+    &:before {
+        content: "";
+        width: 0; height: 0;
+        border-bottom: 60px solid rgb(200, 240, 240);;
+        border-left: 104px solid transparent;
+        border-right: 104px solid transparent;
+        position: absolute;
+        top: -60px;
+    }
+    &:after {
+        content: "";
+        width: 0;
+        position: absolute;
+        bottom: -60px;
+        border-top: 60px solid rgb(200, 240, 240);;
+        border-left: 104px solid transparent;
+        border-right: 104px solid transparent;
     }
     .content{
         height: 90px;
@@ -41,17 +62,20 @@
             color: #4a4a4a;
         }
     }
+
+    
+    
+      
+    
 }
 
-.hex:after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -60px;
-    border-top: 60px solid rgb(200, 240, 240);;
-    border-left: 104px solid transparent;
-    border-right: 104px solid transparent;
-}
+@media only screen and (max-width: 850px) {
+    .hex {
+      margin: 80px 80px 80px 80px;
+    }
+  }
+
+
 
 
 
