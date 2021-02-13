@@ -1,11 +1,12 @@
 @import 'mediaQueries';
+@import 'colors';
 
 .navMenu{
   height: 80px;
   width: 100%;
   display: flex;
   align-items:flex-start;
-  background-color: rgb(54, 58, 58);
+  background-color: $charcoal;
   justify-content: left;
   padding-bottom: 5px;
   padding-top: 40px;
@@ -15,11 +16,11 @@
 
   &-logo{
     cursor: pointer;
-    color: white;
+    color: $light-cyan;
     font-size: 19px;
     margin-left: 24px;
     &:hover {
-        color: purple;
+        color: $viridia-green;
         transition: all 0.3s ease;
         text-decoration: none;
       }
@@ -29,7 +30,7 @@
     opacity: 0;
 
     @include tablet {
-      color: white;
+      color: $light-cyan;
       opacity: 1;
       position: absolute;
       top: 22px;
@@ -40,8 +41,7 @@
   &-options{
     list-style: none;
     text-align: center;
-
-  font-weight: lighter;
+    font-weight: lighter;
     
     @include tablet {
       display: none;
@@ -49,12 +49,12 @@
   }
 
   &-option {
-    color: white;
+    color: $light-cyan;
     font-size: 18px;
     padding: 35px 10px;
 
     &:hover {
-      color: purple;
+      color:$viridia-green;
       transition: all 0.3s ease;
       text-decoration: none;
     }

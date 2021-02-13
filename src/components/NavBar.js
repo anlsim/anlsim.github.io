@@ -1,16 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars} from '@fortawesome/free-solid-svg-icons';
 
-const NavBar = () => {
-
+class NavBar extends Component {
+    state = {
+        toggle:false
+    }
+    Toggle = () => {
+      this.setState({toggle:!this.state.toggle})
+    }
+    render(){
     return (
       <nav className ="navMenu">
         
           <Link className='navMenu-logo' to="/">Andrea Simental</Link>
-          <div className="navMenu-burger"><FontAwesomeIcon icon={faBars}/></div>
+          <button className="navMenu-burger" onClick={this.Toggle}><FontAwesomeIcon icon={faBars}/></button>
           
          
               <div className='navMenu-options'>
@@ -28,6 +34,7 @@ const NavBar = () => {
       </nav>
 
     );
+    }
 }
 
     
