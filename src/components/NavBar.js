@@ -3,38 +3,31 @@ import {Link} from 'react-router-dom';
 import '../styles/NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars} from '@fortawesome/free-solid-svg-icons';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
-class NavBar extends Component {
-    state = {
-        toggle:false
-    }
-    Toggle = () => {
-      this.setState({toggle:!this.state.toggle})
-    }
-    render(){
+const NavBar = () => {
     return (
-      <nav className ="navMenu">
-        
-          <Link className='navMenu-logo' to="/">Andrea Simental</Link>
-          <button className="navMenu-burger" onClick={this.Toggle}><FontAwesomeIcon icon={faBars}/></button>
-          
-         
-              <div className='navMenu-options'>
-                  <Link className='navMenu-option' to="/About">About Me</Link>
-                  <Link className='navMenu-option' to="/Resume">Resume</Link>
-                  
-                  <Link className='navMenu-option' to="/projects">Projects</Link>
-                  
-                  <Link className='navMenu-option' to="/contact">Contact</Link>
-                 
-
-              </div>
-             
+    <>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Link className='navMenu-logo' to="/">Andrea Simental</Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+            <Link className='navMenu-option' to="/About">About Me</Link>
+            <Link className='navMenu-option' to="/Resume">Resume</Link>
+            <Link className='navMenu-option' to="/projects">Projects</Link>
+            <Link className='navMenu-option' to="/contact">Contact</Link>
+                        
             
-      </nav>
+            </Nav>
+            
+        </Navbar.Collapse>
+    </Navbar>
+    </>
+    )
 
-    );
-    }
+    
 }
 
     

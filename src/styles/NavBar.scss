@@ -13,6 +13,7 @@
   z-index: 10;
   position: relative;
   text-decoration: none;
+  
 
   &-logo{
     cursor: pointer;
@@ -30,12 +31,14 @@
     opacity: 0;
 
     @include tablet {
+      cursor: pointer;
       color: $light-cyan;
       opacity: 1;
       position: absolute;
       top: 22px;
       right: 20px;
       font-size: 2rem;
+
     }
   }
   &-options{
@@ -46,8 +49,8 @@
     @include tablet {
       display: none;
     }
+    
   }
-
   &-option {
     color: $light-cyan;
     font-size: 18px;
@@ -58,5 +61,20 @@
       transition: all 0.3s ease;
       text-decoration: none;
     }
+    
   }
+  
+  
+  .dropdown{
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background-color: $charcoal;
+   
+    display: flex;
+  
+
+
+}
+  
 }
