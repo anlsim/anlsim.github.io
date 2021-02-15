@@ -5,7 +5,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import './App.css';
+import './App.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
