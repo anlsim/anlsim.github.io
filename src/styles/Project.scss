@@ -1,47 +1,40 @@
 @import 'colors';
-.flex {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    margin: 20px;
-    
 
-}
 
 
 .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
   display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 1px 10px;
-    width: 336px;
-    background-color: $light-cyan;
-    color: $charcoal;
-    margin: 20px;
-    
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($charcoal, .15);
+  width: 336px;
+  background-color: $light-cyan;
+  margin: 20px;
   
-    &-header {
-      display: block;
-      width: 100%;
-    }
+
+ 
+  &-name {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  &-name-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+   
+  }
+  &-img {
+    background-size: cover;
+    background-blend-mode: screen;
+  }
   
-    &-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-  
-      &-img {
-        border-radius: 5%;
-        margin-top: calc(-48px - 5px);
-      }
-  
-      &-name {
-        font-size: 1.8rem;
-        margin-top: 2rem;
-      }
-  
-      
-    }
+  &-description {
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+  }
+
 }

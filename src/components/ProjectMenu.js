@@ -10,7 +10,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Web Marks',
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
-                imageUrl: '../assets/webMarks.png',
+                imgUrl: '../assets/photoWebsite.png',
                 id: 1,
                 gitUrl:'',
                 linkUrl:'',
@@ -21,7 +21,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Task Tracker',
                 description: 'Team project to build a web application to help organize and keep track of tasks. Redesigned the View. Added new features to optimize the project.',
-                imageUrl: "../assets/taskTracker.png",
+                imgUrl: '../assets/taskTracker.png',
                 id: 2,
                 gitUrl:'',
                 linkUrl:'',
@@ -31,7 +31,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Photography Portfolio',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue eu.',
-                imageUrl: '../assets/asWebsite.png',
+                imgUrl: '../assets/asWebsite.png',
                 id: 3,
                 gitUrl:'',
                 linkUrl:'',
@@ -46,8 +46,8 @@ class ProjectMenu extends Component {
     }
     render(){
         return(
-           
-            <div className= 'directory-menu'>
+            <div className='row'>
+            
                
                {
                     this.state.sections.map(({id, ...SectionProps}) => (

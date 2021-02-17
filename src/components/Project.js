@@ -4,17 +4,19 @@ import '../styles/Project.scss';
 
 const Project = ({title, description, history, linkUrl, imgUrl, gitUrl}) => (
         <>
-        
+       <div className="row-cols-md-1">
+
+       
         <article className = 'card'>
-            <div className='card-body-image' style={{
-            backgroundImage: `url(${imgUrl})`
-      }}/>
+            <div className='card-img' style={{backgroundImage: `url(${imgUrl})`}}/>
+
+          
 
             
-            <div className = 'card-body'>
-                <h1 className ='card-body-name'>{title}</h1>
-                <p className ='card-body-description'>{description}</p>
-            </div>
+            
+                <h1 className ='card-name'><span className= 'card-name-span'>{title}</span></h1>
+                <p className ='card-description'>{description}</p>
+           
             
 
             <div className= 'card-footer'>
@@ -31,6 +33,9 @@ const Project = ({title, description, history, linkUrl, imgUrl, gitUrl}) => (
             </div>
         
         </article>
+        </div>
+
+    
 
     
         </>
