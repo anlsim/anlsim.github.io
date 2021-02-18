@@ -1,9 +1,11 @@
 @import 'colors';
-@import 'Project';
-@import 'DirectoryMenu';
 
 
 $dark: $charcoal !default;
+$primary:       $viridia-green !default;
+$secondary:     $ming !default;
+$light:         $light-cyan !default;
+
 
 $navbar-dark-color:                 rgba($light-cyan, .5) !default;
 $navbar-dark-hover-color:           rgba($light-cyan, .75) !default;

@@ -7,7 +7,8 @@ const Project = ({title, description, history, linkUrl, imgUrl, gitUrl}) => (
        <div className="row-cols-md-1">
 
        
-        <article className = 'card'>
+        <div className = 'card'>
+            <img src={imgUrl}/>
             <div className='card-img' style={{backgroundImage: `url(${imgUrl})`}}/>
 
           
@@ -32,7 +33,7 @@ const Project = ({title, description, history, linkUrl, imgUrl, gitUrl}) => (
 
             </div>
         
-        </article>
+        </div>
         </div>
 
     

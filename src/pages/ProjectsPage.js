@@ -3,11 +3,10 @@ import ProjectMenu from '../components/ProjectMenu';
 
 const ProjectsPage = () => {
     return (
-            <div>
-
+           
             
             <ProjectMenu/>
-            </div>
+         
             
     )
 }

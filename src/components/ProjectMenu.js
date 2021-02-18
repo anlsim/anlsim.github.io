@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Project from './Project';
 import '../styles/DirectoryMenu.scss';
 
+
 class ProjectMenu extends Component {
     constructor(){
         super();
@@ -10,7 +11,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Web Marks',
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
-                imgUrl: '../assets/photoWebsite.png',
+                imgUrl: '../assets/webMarks.png',
                 id: 1,
                 gitUrl:'',
                 linkUrl:'',

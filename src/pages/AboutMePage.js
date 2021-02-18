@@ -1,35 +1,22 @@
-import React from 'react'
-import { Container } from 'react-bootstrap';
-import '../styles/aboutme.scss';
-import '../styles/Project.scss';
+import React from 'react';
 
 const AboutMePage = () => {
     return (
-        <main>
-          <div className="row">
-            <div className="col-3">
-            <div className = 'card'>
-            <div className='card-side card-side-front'>
-                FRONT
-            </div>
-            <div className='card-side card-side-back'>
-                BACK
-            </div>
-            </div>
-            <div className = 'card'>
-            <div className='card-side card-side-front'>
-                FRONT
-            </div>
-            <div className='card-side card-side-back'>
-                BACK
-            </div>
-            </div>
+      <div className="container pt-2">
 
-            </div>
-         
+        <div className="jumbotron"><h1>About Me</h1></div>
+        <div className="container bg-primary pt-5">
+          <div className="row center">
+              <div className="col"><img src=""></img></div>
+              <div className="col">
+                <h4>Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams. </h4></div>
+              
+          </div>
         </div>
-        
-        </main>
+      </div>
+      
+       
+         
         
     )
 }
