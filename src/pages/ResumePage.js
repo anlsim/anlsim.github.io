@@ -1,11 +1,14 @@
 import React from 'react';
+import SectionTitle from '../components/SectionTitle';
+
 
 
 const ResumePage = () => {
     return (
-       <div>
-           
-       </div>
+        <main>
+            <SectionTitle />
+        </main>
+
     )
 }
 

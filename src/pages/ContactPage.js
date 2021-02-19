@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquareAlt, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
+import SectionTitle from '../components/SectionTitle';
 
 const ContactPage = () => {
     return (
         <>
+        <SectionTitle/>
         <div className="container">
-            <div className="jumbotron"><h1>Contact Me</h1></div>
+
                 <div className="row center">
                     <div className="col"><img src=""></img>Photo</div>
                     <div className="col">

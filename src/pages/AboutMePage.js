@@ -1,11 +1,12 @@
 import React from 'react';
+import SectionTitle from '../components/SectionTitle';
 
 const AboutMePage = () => {
     return (
+      <>
+      <SectionTitle />
       <div className="container pt-2">
-        <div className="jumbotron">
-          <h1>About Me</h1>
-        </div>
+       
         <div className="container bg-primary pt-5">
           <div className="row center">
               <div className="col"><img src="" alt=""></img></div>
@@ -17,6 +18,7 @@ const AboutMePage = () => {
         <br/>
         <div className="container  bg-light pt-5">Education</div>
       </div>
+      </>
       
        
          

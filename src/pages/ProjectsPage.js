@@ -1,11 +1,13 @@
 import React from 'react';
 import ProjectMenu from '../components/ProjectMenu';
+import SectionTitle from '../components/SectionTitle';
 
 const ProjectsPage = () => {
     return (
            
             <main>
-            <div className="jumbotron"><h1>Projects</h1></div>
+
+           <SectionTitle/>
             
             <div className="container">
             <ProjectMenu/>
