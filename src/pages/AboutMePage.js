@@ -8,7 +8,7 @@ const AboutMePage = () => {
         </div>
         <div className="container bg-primary pt-5">
           <div className="row center">
-              <div className="col"><img src=""></img></div>
+              <div className="col"><img src="" alt=""></img></div>
               <div className="col">
                 <h4>Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams. </h4>
               </div>
