@@ -17,11 +17,11 @@
 
   &-logo{
     cursor: pointer;
-    color: $light-cyan;
+    color: $white-pas;
     font-size: 19px;
     margin-left: 24px;
     &:hover {
-        color: $viridia-green;
+        color: $blue-pas;
         transition: all 0.3s ease;
         text-decoration: none;
       }
@@ -32,7 +32,7 @@
 
     @include tablet {
       cursor: pointer;
-      color: $light-cyan;
+      color: $white-pas;
       opacity: 1;
       position: absolute;
       top: 22px;
@@ -52,12 +52,12 @@
     
   }
   &-option {
-    color: $light-cyan;
+    color: $white-pas;
     font-size: 18px;
     padding: 35px 10px;
 
     &:hover {
-      color:$viridia-green;
+      color:$blue-pas;
       transition: all 0.3s ease;
       text-decoration: none;
     }

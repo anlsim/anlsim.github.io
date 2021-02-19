@@ -2,16 +2,16 @@
 
 
 $dark: $charcoal !default;
-$primary:       $viridia-green !default;
-$secondary:     $ming !default;
-$light:         $light-cyan !default;
+$primary:       $blue-pas !default;
+$secondary:     $yellow-pas !default;
+$light:         $white-pas !default;
 
 
-$navbar-dark-color:                 rgba($light-cyan, .5) !default;
-$navbar-dark-hover-color:           rgba($light-cyan, .75) !default;
-$navbar-dark-active-color:          $light-cyan !default;
-$navbar-dark-disabled-color:        rgba($light-cyan, .25) !default;
+$navbar-dark-color:                 rgba($white-pas, .5) !default;
+$navbar-dark-hover-color:           rgba($white-pas, .75) !default;
+$navbar-dark-active-color:          $white-pas !default;
+$navbar-dark-disabled-color:        rgba($white-pas, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba($light-cyan, .1) !default;
+$navbar-dark-toggler-border-color:  rgba($white-pas, .1) !default;
 
 @import "~bootstrap/scss/bootstrap";

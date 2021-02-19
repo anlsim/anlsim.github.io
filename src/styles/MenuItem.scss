@@ -3,7 +3,7 @@
     margin-top: 60px;
     width: 208px;
     height: 110px;
-    background-color: $light-cyan;
+    background-color: $white-pas;
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@
     
     &:hover {
         cursor: pointer;
+        
         & .content {
             opacity: 0.5;
           }
@@ -21,7 +22,7 @@
     &:before {
         content: "";
         width: 0; height: 0;
-        border-bottom: 60px solid $light-cyan;
+        border-bottom: 60px solid $white-pas;
         border-left: 104px solid transparent;
         border-right: 104px solid transparent;
         position: absolute;
@@ -32,7 +33,7 @@
         width: 0;
         position: absolute;
         bottom: -60px;
-        border-top: 60px solid $light-cyan;
+        border-top: 60px solid $white-pas;
         border-left: 104px solid transparent;
         border-right: 104px solid transparent;
     }
@@ -50,7 +51,7 @@
             font-weight: bold;
             margin-bottom: 6px;
             font-size: 24px;
-            color: $ming;
+            color: $blue-pas;
         }
     }
 
