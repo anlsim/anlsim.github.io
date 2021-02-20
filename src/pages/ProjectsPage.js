@@ -6,12 +6,10 @@ const ProjectsPage = (props) => {
     return (
            
             <main>
-
-           <SectionTitle title={props.title}/>
-            
-            <div className="container">
-            <ProjectMenu/>
-            </div>
+                <SectionTitle title={props.title}/>
+                <div className="container">
+                    <ProjectMenu/>
+                </div>
             </main>
          
             

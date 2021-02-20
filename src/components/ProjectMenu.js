@@ -37,10 +37,7 @@ class ProjectMenu extends Component {
                 gitUrl:'',
                 linkUrl:'',
 
-                
             },
-         
-        
        
             ]
         };
@@ -48,8 +45,6 @@ class ProjectMenu extends Component {
     render(){
         return(
             <div className='row'>
-            
-               
                {
                     this.state.sections.map(({id, ...SectionProps}) => (
                         <Project key={id} {...SectionProps}/>
