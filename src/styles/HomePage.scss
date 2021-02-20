@@ -1,32 +1,33 @@
 @import 'colors';
 
     .homepage{
-             text-align: center;
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px 80px;
             
     }
-    .intro{
+    .header{
         color: $blue-pas;
-        width: 600px;
+        width: 700px;
         border-radius: 15px;
         padding: 50px 50px;
         margin: 50px 50px;
         
-    }
-    .intro-text{
-        
-        font-size: 80px;
-        
-    }
-    .text-description{
 
-        font-weight: lighter;
-        font-size: 30px;
+        &-title{
+            font-size: 100px;
+            
+        }
+        &-subtitle{
+            font-weight: lighter;
+            font-size: 40px;
+            
+        }
         
     }
+    
 
 
 
