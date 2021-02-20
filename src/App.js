@@ -7,7 +7,6 @@ import {
 
 import './App.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
@@ -49,9 +48,7 @@ class App extends Component {
     return (
       <>
       <Router>
-        <div>
-            <NavBar />
-        </div>
+  
         <Switch>
             <div>
                 <Route path="/" exact render={() => <HomePage title={this.state.home.title}/> }/>

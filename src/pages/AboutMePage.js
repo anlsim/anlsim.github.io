@@ -1,9 +1,11 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
+import NavBar from '../components/NavBar';
 
 const AboutMePage = (props) => {
     return (
       <>
+      <NavBar />
       <SectionTitle  title={props.title}/>
       <div className="container pt-2">
        

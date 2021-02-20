@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Project from './Project';
 import '../styles/DirectoryMenu.scss';
+import NavBar  from './NavBar';
 
 
 class ProjectMenu extends Component {
@@ -44,6 +45,8 @@ class ProjectMenu extends Component {
     }
     render(){
         return(
+            <>
+            <NavBar />
             <div className='row'>
                {
                     this.state.sections.map(({id, ...SectionProps}) => (
@@ -52,6 +55,7 @@ class ProjectMenu extends Component {
                 }
               
             </div>
+            </>
            
         );
 

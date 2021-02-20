@@ -11,7 +11,7 @@ class DirectoryMenu extends Component {
                 title: 'About Me',
                 imageUrl: 'commingsoon',
                 id: 1,
-                inkUrl: 'about'
+                linkUrl: 'about'
             },
             {
                 title: 'Resume',
