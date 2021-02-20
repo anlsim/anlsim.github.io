@@ -2,12 +2,12 @@ import React from 'react';
 import ProjectMenu from '../components/ProjectMenu';
 import SectionTitle from '../components/SectionTitle';
 
-const ProjectsPage = () => {
+const ProjectsPage = (props) => {
     return (
            
             <main>
 
-           <SectionTitle/>
+           <SectionTitle title={props.title}/>
             
             <div className="container">
             <ProjectMenu/>

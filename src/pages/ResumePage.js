@@ -3,10 +3,10 @@ import SectionTitle from '../components/SectionTitle';
 
 
 
-const ResumePage = () => {
+const ResumePage = (props) => {
     return (
         <main>
-            <SectionTitle />
+            <SectionTitle title={props.title}/>
         </main>
 
     )

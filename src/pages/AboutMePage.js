@@ -1,10 +1,10 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 
-const AboutMePage = () => {
+const AboutMePage = (props) => {
     return (
       <>
-      <SectionTitle />
+      <SectionTitle  title={props.title}/>
       <div className="container pt-2">
        
         <div className="container bg-primary pt-5">

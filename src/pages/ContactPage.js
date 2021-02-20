@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquareAlt, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
 import SectionTitle from '../components/SectionTitle';
 
-const ContactPage = () => {
+const ContactPage = (props) => {
     return (
         <>
-        <SectionTitle/>
+        <SectionTitle title={props.title}/>
         <div className="container">
 
                 <div className="row center">

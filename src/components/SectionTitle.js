@@ -1,10 +1,13 @@
 import React from 'react';
 import '../styles/sectionTitle.scss';
 
-const SectionTitle = () => {
+const SectionTitle = (props) => {
     return (
+       
         <div className= 'hero'>
-            <div className='hero-img'><h1 className='text'>Tittle</h1></div>
+            <div className='hero-img'>
+                <h1 className='text'>{props.title}</h1>
+            </div>
             
         </div>
     )
