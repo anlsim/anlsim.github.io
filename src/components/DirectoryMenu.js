@@ -6,24 +6,33 @@ class DirectoryMenu extends Component {
     constructor(){
         super();
         this.state ={
-            sections:  [{
-                title: 'Resume',
+            sections:  [
+            {
+                title: 'About Me',
                 imageUrl: 'commingsoon',
                 id: 1,
+                inkUrl: 'about'
+            },
+            {
+                title: 'Resume',
+                imageUrl: 'commingsoon',
+                id: 2,
                 linkUrl: 'resume'
             },
             {
                 title: 'Projects',
                 imageUrl: 'commingsoon',
-                id: 2,
+                id: 3,
                 linkUrl: 'projects'
             },
             {
                 title: 'Contact',
                 imageUrl: 'commingsoon',
-                id: 3,
+                id: 4,
                 linkUrl: 'contact'
             },
+           
+
 
 
             ]
