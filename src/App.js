@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
-import ResumePage from './pages/ResumePage';
+import SkillsPage from './pages/SkillsPage';
 import AboutMePage from './pages/AboutMePage';
 
 
@@ -36,8 +36,8 @@ class App extends Component {
       projects: {
         title: 'Projects'
       },
-      resume: { 
-        title: 'Resume'
+      skills: { 
+        title: 'Skills'
       },
       contact: {
         title: 'Contact Me'
@@ -53,7 +53,7 @@ class App extends Component {
             <div>
                 <Route path="/" exact render={() => <HomePage title={this.state.home.title}/> }/>
                 <Route path="/about" render={() => <AboutMePage title={this.state.about.title} />}  />
-                <Route path="/resume" render={() => <ResumePage title={this.state.resume.title} />}  />
+                <Route path="/skills" render={() => <SkillsPage title={this.state.skills.title} />}  />
                 <Route path="/projects" render={() => <ProjectsPage title={this.state.projects.title} />}  />
                 <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />}  />
             </div>

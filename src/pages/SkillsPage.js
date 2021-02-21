@@ -4,7 +4,7 @@ import NavBar  from '../components/NavBar';
 
 
 
-const ResumePage = (props) => {
+const SkillsPage = (props) => {
     return (
         <main>
               <NavBar/>
@@ -14,4 +14,4 @@ const ResumePage = (props) => {
     )
 }
 
-export default ResumePage;
+export default SkillsPage;
