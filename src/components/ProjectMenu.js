@@ -7,7 +7,7 @@ class ProjectMenu extends Component {
     constructor(){
         super();
         this.state ={
-            sections:  [{
+            projects:  [{
                 
                 title: 'Web Marks',
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
@@ -47,7 +47,7 @@ class ProjectMenu extends Component {
             <>
             <div className='row'>
                {
-                    this.state.sections.map(({id, ...SectionProps}) => (
+                    this.state.projects.map(({id, ...SectionProps}) => (
                         <Project key={id} {...SectionProps}/>
                     ))
                 }

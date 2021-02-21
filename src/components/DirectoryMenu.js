@@ -9,31 +9,24 @@ class DirectoryMenu extends Component {
             sections:  [
             {
                 title: 'About Me',
-                imageUrl: 'commingsoon',
                 id: 1,
                 linkUrl: 'about'
             },
             {
                 title: 'Resume',
-                imageUrl: 'commingsoon',
                 id: 2,
                 linkUrl: 'resume'
             },
             {
                 title: 'Projects',
-                imageUrl: 'commingsoon',
                 id: 3,
                 linkUrl: 'projects'
             },
             {
                 title: 'Contact',
-                imageUrl: 'commingsoon',
                 id: 4,
                 linkUrl: 'contact'
             },
-           
-
-
 
             ]
         };
