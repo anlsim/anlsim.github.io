@@ -13,9 +13,9 @@ const AboutMePage = (props) => {
         <div className="img col-sm-4">
           <span className="img"></span>
         </div>
-          <div className="contentss col-sm-8">
-            <h1>ANDREA SIMENTAL</h1>
-            <h4>Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams.</h4>
+          <div className="aboutInfo col-sm-8">
+            <h1 className="aboutInfo-title">ANDREA SIMENTAL</h1>
+            <p className="aboutInfo-description">Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams.</p>
 
           </div>
           
@@ -24,7 +24,7 @@ const AboutMePage = (props) => {
        
         <br/>
         <div className="container pt-5">
-          <h1>Education</h1>
+          <h1 className='education-title'>Education</h1>
           <div className ='jumbotron'>
             <h2>BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h2>
             <h3>COMPUTING AND SOFTWARE DEVELOPMENT • GPA: 3.71</h3>

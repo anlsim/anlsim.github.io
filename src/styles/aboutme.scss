@@ -1,36 +1,48 @@
 @import 'colors';
 .aboutMe{
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
 .img{
-    background-image: url(../assets/backgroundImageYellow.jpg);
+    background-image: url(../assets/andreaS.jpg);
+    background-size: cover;
+    background-position: center;
     height: 350px;
     height: 350px;
     border-radius: 50%;
+
     
 
 }
 
-.contentss{
+.aboutInfo{
+    text-align: center;
     padding: 20px;
     background-color: $white-pas;
     border-radius: 5px;
     color: $blue-pas;
-    font-weight: lighter;
     
     
+    &-title{
+        color: $yellow-pas;
+        font-size: 60px;
+    }
+    &-description{
+        font-weight: lighter;
+        font-size: 30px;
+    }
 }
 
 
 
-.education-main{
+.education{
 
-    width: 80%;
-    display: flex;
+    
 
-    .title{
+    &-title{
+        text-transform: uppercase;
+        color: $white-pas;
         font-size: 60px;
     }
 
