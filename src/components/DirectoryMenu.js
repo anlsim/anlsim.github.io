@@ -13,14 +13,14 @@ class DirectoryMenu extends Component {
                 linkUrl: 'about'
             },
             {
-                title: 'Resume',
+                title: 'Projects',
                 id: 2,
-                linkUrl: 'resume'
+                linkUrl: 'projects'
             },
             {
-                title: 'Projects',
+                title: 'Skills',
                 id: 3,
-                linkUrl: 'projects'
+                linkUrl: 'skills'
             },
             {
                 title: 'Contact',
