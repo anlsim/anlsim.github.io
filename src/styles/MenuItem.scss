@@ -26,12 +26,7 @@
     }
 
 
-@include tablet{
-    .pentagon{
-        width: 200px;
-        height: 180px;
-    }  
-}
+   
 
 }
 .content{ 
@@ -49,6 +44,18 @@
     align-items: center;
     margin-top: 30px;
     justify-content: center;
+}
+
+@include tablet{
+    .pentagon{
+        width: 150px;
+        height: 160px;
+    }  
+
+    .title{
+        margin-top: 50px;
+        font-size: 25px;
+    }
 }
 
 

@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mediaQueries';
 
     .homepage{
             text-align: center;
@@ -11,23 +12,68 @@
     .header{
         color: $blue-pas;
         width: 700px;
-        border-radius: 15px;
         padding: 50px 50px;
         margin: 50px 50px;
         
 
         &-title{
-            font-size: 100px;
             
+            font-size: 100px;
         }
         &-subtitle{
             font-weight: lighter;
             font-size: 40px;
             
         }
+
+
+
         
+         
     }
     
+    @include tablet{
+       
+        .header{
+            width: 500px;
+            margin: 50px 50px;
+            padding: 50px 50px;
+
+            &-title{
+        
+                font-size: 65px;
+                
+            }
+            &-subtitle{
+                font-weight: lighter;
+                font-size: 30px;
+                
+            }
+        } 
+        
+    }
+
+    @include mobile {
+       
+        .header{
+            align-items: center;
+            width: 300px;
+            
+
+            &-title{
+                align-items: center;
+                font-size: 40px;
+                
+            }
+            &-subtitle{
+                align-items: center;
+                font-weight: lighter;
+                font-size: 20px;
+                
+            }
+        } 
+        
+    }
 
 
 

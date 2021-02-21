@@ -1,2 +1,46 @@
 @import 'colors';
 
+.about{
+    width: 80%;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    padding: 20px 80px;
+
+    .img{
+        background-color: $white-pas;
+        padding: 30px;
+        width: 50%;
+        margin: 0;
+        float: left;
+        border-radius: 20%;
+    }
+
+    .content{
+        padding: 30px;
+        background-color: $white-pas;
+        border-radius: 5%;
+        color: $blue-pas;
+        margin: 0;
+        width: 50%;
+        float: right;
+        font-weight: lighter;
+        
+    }
+
+}
+
+
+.education-main{
+
+    width: 80%;
+    display: flex;
+
+    .title{
+        font-size: 60px;
+    }
+
+
+
+}
