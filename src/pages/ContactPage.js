@@ -18,7 +18,7 @@ const ContactPage = (props) => {
                     <div className="col">
                     <ul>
                         <li>
-                        <FontAwesomeIcon icon={faPhoneSquareAlt} />
+                        <FontAwesomeIcon icon={faPhoneSquareAlt} size="50px" />
                         123-453-9876
                         </li>
                         <li>
