@@ -8,20 +8,38 @@ const AboutMePage = (props) => {
       <>
       <NavBar />
       <SectionTitle  title={props.title}/>  
-        <div className="container pt-5">
-          <div className="about">
-              <div className="img"><img src="" alt=""></img></div>
-              <div className="content">
-                <h4>Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams. </h4>
-              </div>
-          </div>
+      <div className="aboutMe">
+        <div className="row">
+        <div className="img col-sm-4">
+          <span className="img"></span>
         </div>
+          <div className="contentss col-sm-8">
+            <h1>ANDREA SIMENTAL</h1>
+            <h4>Collaborative and creative Software Developer with a keen interest in building responsive and scalable web apps to enhance user experience. Fluent in Spanish and English, accustomed to working with cross-cultural, global teams.</h4>
+
+          </div>
+          
+      </div>
+      </div>
+       
         <br/>
         <div className="container pt-5">
-          <h2>Education</h2>
-          <div className ='jumbotron'>1</div>
-          <div className ='jumbotron'>2</div>
-          <div className ='jumbotron'>3</div>
+          <h1>Education</h1>
+          <div className ='jumbotron'>
+            <h2>BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h2>
+            <h3>COMPUTING AND SOFTWARE DEVELOPMENT • GPA: 3.71</h3>
+            <h4>Lake Washington Institute of Technology • Seattle, WA</h4>
+          </div>
+          <div className ='jumbotron'>
+            <h2>ASSOCIATE’S OF APPLIED SCIENCE • 2017 - 2019</h2>
+            <h3>COMPUTING AND SOFTWARE DEVELOPMENT • GPA: 3.68</h3>
+            <h4>Lake Washington Institute of Technology • Seattle, WA</h4>
+          </div>
+          <div className ='jumbotron'>
+            <h2>BACHELOR’S DEGREE • 2007 - 2011</h2>
+            <h3>GRAPHIC DESIGN • GPA: 3.80</h3>
+            <h4>Universidad de Guadalajara - CUAAD • Guadalajara, MX</h4>
+          </div>
         </div>
       
       </>
