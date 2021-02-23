@@ -44,4 +44,10 @@
         font-size: 80px;
     }  
     
-}
+  }
+  @include mobile{
+    .text{
+        font-size: 60px;
+    }  
+    
+  }

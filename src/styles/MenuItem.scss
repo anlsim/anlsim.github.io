@@ -22,7 +22,7 @@
     &:hover {
         cursor: pointer;
         background-color: $yellow-pas;
-        opacity: 90%;
+        
     }
 
 
@@ -38,6 +38,7 @@
         color: $white-pas;
     }
 }
+
 .title{
     height: 90px;
     padding: 0 25px;
@@ -48,8 +49,8 @@
 
 @include tablet{
     .pentagon{
-        width: 150px;
-        height: 160px;
+        width: 200px;
+        height: 210px;
     }  
 
     .title{

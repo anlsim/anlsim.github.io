@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mediaQueries';
 .aboutMe{
     width: 60%;
     margin: auto;
@@ -12,6 +13,13 @@
     height: 350px;
     border-radius: 50%;
 
+    @include mobile{
+
+        height: 290px;
+        height: 290px;
+        margin-bottom: 10px;
+    }
+
     
 
 }
@@ -19,7 +27,7 @@
 .aboutInfo{
     text-align: center;
     padding: 20px;
-    background-color: rgba($white-pas, 0.5);
+    background-color: rgba($white-pas, 0.6);
     border-radius: 5px;
     color: $blue-pas;
     
@@ -36,16 +44,48 @@
 
 
 
-.education{
-
-    
-
-    &-title{
-        text-transform: uppercase;
+    .education-title{
+        background-color:$yellow-pas;
         color: $white-pas;
-        font-size: 60px;
+        font-size: 80px;
+        
+    }
+    .degree{
+        color: $yellow-pas;
+        font-size: 30px;
+        &-title{
+        font-size: 25px;
+        color:$blue-pas;
+
+
+        }
+        &-address{
+            font-weight: lighter;
+            color:$blue-pas;
+
+        }
+        
     }
 
+@include mobile{
+   
+    .aboutInfo{
+        
+        
+        &-title{
+            color: $yellow-pas;
+            font-size: 40px;
+        }
+        &-description{
+            font-weight: lighter;
+            font-size: 25px;
+        }
+    }
 
-
+    .education-title{
+       
+            font-size: 60px;
+    }
+    
 }
+
