@@ -13,7 +13,7 @@ class ProjectMenu extends Component {
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
                 imgUrl: '../assets/webMarks.png',
                 id: 1,
-                gitUrl:'',
+                gitUrl:'https://github.com/anlsim/WebMarks',
                 linkUrl:'',
             
 
@@ -24,17 +24,17 @@ class ProjectMenu extends Component {
                 description: 'Team project to build a web application to help organize and keep track of tasks. Redesigned the View. Added new features to optimize the project.',
                 imgUrl: '../assets/taskTracker.png',
                 id: 2,
-                gitUrl:'',
+                gitUrl:'https://github.com/anlsim/TimeTracker',
                 linkUrl:'',
                 
             },
             {
                 
                 title: 'Photography Portfolio',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue eu.',
-                imgUrl: '../assets/asWebsite.png',
+                description: 'Personal photography portfolio. Built with HTML and Bootstrap',
+                imgUrl: '../assets/photoWebsite.png',
                 id: 3,
-                gitUrl:'',
+                gitUrl:'https://github.com/anlsim/photography_website',
                 linkUrl:'',
 
             },
