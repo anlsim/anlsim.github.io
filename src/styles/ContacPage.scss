@@ -1,0 +1,27 @@
+@import 'colors';
+
+.container{
+    margin-top: 100px;
+}
+.contactIcon{
+    transition: transform .2s; 
+    &:hover{
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2); 
+    }
+
+    &-color{
+
+        font-size: 150px;
+        color: $yellow-pas;
+        
+        
+    
+       
+        
+    }
+
+    
+}
+
