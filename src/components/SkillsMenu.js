@@ -33,7 +33,7 @@ class SkillsMenu extends Component {
                 },
                 {
                     id: 3,
-                    title: 'Ohter',
+                    title: 'Other',
                     skillItem:[ 
                         {name:'OPP'},
                         {name:'MVC'},

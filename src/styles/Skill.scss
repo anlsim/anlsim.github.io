@@ -1,0 +1,17 @@
+@import 'colors';
+.skill-header{
+    width: auto;
+    background-color: $blue-pas;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($charcoal, .15);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+}
+.skill{
+    color: $yellow-pas;
+    font-size: 40px;
+
+    &-item{
+        color: $blue-pas;
+    }
+}
