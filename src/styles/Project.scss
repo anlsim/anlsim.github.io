@@ -27,7 +27,7 @@
   }
  
   &-img {
-    bwidth: 100%;
+    width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -35,11 +35,19 @@
   
   &-description {
     font-weight: lighter;
-    font-size: 16px;
+    text-align: center;
+    color: $blue-pas;
+    font-size: 20px;
     padding: 10px;
   }
   &-footer{
     background-color: $yellow-pas;
+
+    &-icon{
+      color: $white-pas;
+      font-size: 50px;
+    }
+    
   }
 
 }

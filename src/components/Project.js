@@ -14,16 +14,14 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl}) => (
                             <h1 className ='card-name'>{title}</h1>
                             <p className ='card-description'>{description}</p>
                     <div className= 'card-footer'>
-                        <div class="card-footer-social">
+                        
                             <h3>
-                                <a   href={gitUrl} target="blank">
+                                <a className="card-footer-icon"  href={gitUrl} target="blank">
                                 <FontAwesomeIcon icon={faGithub}/>
                                 </a>
                             </h3>                 
-                        </div>
-                        <div class="card-footer-social">
-                            
-                        </div>
+                       
+                        
                     </div>
                 </div>
             </div>
