@@ -5,19 +5,22 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import '../styles/Project.scss';
 
 
-const Project = ({title, description, linkUrl, imgUrl, gitUrl}) => (
+const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
         <>
             <div className="row-md-1">
                 <div className = 'card'>
-                    
-                <div className='card-images'
-                    style={{
-                    backgroundImage: `url(${imgUrl})`
-                }}
-                />
+                    <div className='card-title'>
+                    <h1 className ='card-name'>{title}</h1>
+                    </div>
+                    <div className='card-body'>
+                    <p className ='card-description'>{description}</p>
+                    <hr/>
+                    <h2 className='card-tools'>Tools used:</h2>
+                    <p className ='card-description'>{tools}</p>
+        
+                    </div>
                
-                            <h1 className ='card-name'>{title}</h1>
-                            <p className ='card-description'>{description}</p>
+                    
                     <div className= 'card-footer'>
                         
                             <h3>

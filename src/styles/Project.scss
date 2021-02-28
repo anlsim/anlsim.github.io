@@ -11,9 +11,20 @@
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba($charcoal, .15);
   width: 400px;
-  height: 400px;
   background-color: rgba($white-pas, .7);
   margin: 20px;
+
+  &-title{
+   
+      border-color: none;
+      border-bottom: none;
+      height: 150px;
+      background-color: $blue-pas;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+      align-items: center;
+  
+  }
 
 
   &-images{
@@ -26,13 +37,16 @@
 
  
   &-name {
-    font-size: 35px;
-    margin-top: 2rem;
-    text-align: center;
-    color: $blue-pas;
+    font-size: 30px;
+    margin-top: 10px;
+    color: $yellow-pas;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
     
+  }
+  &-tools{
+    color: $yellow-pas;
+    font-size: 25px;
   }
  
   
@@ -46,7 +60,7 @@
   }
   &-footer{
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
-
+    align-content: flex-end;
     background-color: $yellow-pas;
 
     &-icon{

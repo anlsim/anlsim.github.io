@@ -7,13 +7,28 @@ class ProjectMenu extends React.Component {
     constructor(){
         super();
         this.state ={
-            projects:  [{
+            projects:  [
+            
+            {
+                
+                title: 'Personal Portolio',
+                description: 'Built a web portfolio to show projects, skills, and other relevant information',
+                imgUrl: '../assets/webMarks.png',
+                id: 1,
+                gitUrl: 'https://github.com/anlsim/anlsim.github.io',
+                tools:'React, Sass, Bootstrap',
+                linkUrl:'',
+                
+    
+            },
+            {
                 
                 title: 'Web Marks',
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
                 imgUrl: '../assets/webMarks.png',
-                id: 1,
+                id: 2,
                 gitUrl: 'https://github.com/anlsim/WebMarks',
+                tools:'C#, ASP.NET, MVC, Bootstrap',
                 linkUrl:'',
             
 
@@ -23,8 +38,9 @@ class ProjectMenu extends React.Component {
                 title: 'Task Tracker',
                 description: 'Team project to build a web application to help organize and keep track of tasks. Redesigned the View. Added new features to optimize the project.',
                 imgUrl: '../assets/webMarks.png',
-                id: 2,
+                id: 3,
                 gitUrl:'https://github.com/anlsim/TimeTracker',
+                tools:'C#, ASP.NET, MVC, Bootstrap',
                 linkUrl:'',
                 
             },
@@ -33,8 +49,9 @@ class ProjectMenu extends React.Component {
                 title: 'Photography Portfolio',
                 description: 'Personal photography portfolio. Built with HTML and Bootstrap',
                 imgUrl: '../assets/webMarks.png',
-                id: 3,
+                id: 4,
                 gitUrl:'https://github.com/anlsim/photography_website',
+                tools:'HTML, Bootstrap',
                 linkUrl:'',
 
             },
