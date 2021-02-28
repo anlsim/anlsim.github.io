@@ -4,14 +4,15 @@ import '../styles/Skill.scss';
 
 const Skill = (props) => (
         <>
-            <div className="col-xl-3 col-md-6 mb-4">
-                <div className="card shadow h-100 py-2">
+           <div className="col-xl-3 col-md-6 mb-4">
+                <div className="card">
+                    <div className="card-header">
+                        <h2 className ="card-title">{props.title}</h2>
+                    </div>
                     <div className="card-body">
                         <div className="row align-items-center">
-                            <div className="col mr-2">
-                                <div className="skill-header">
-                                    <h2 className ="skill">{props.title}</h2>
-                                </div>
+                            <div className="skill col mr-2">
+                            
                                 {props.skillItem.map(item=>{
                                     return <h4 className="skill-item">{item.name}</h4>
                                 })}  

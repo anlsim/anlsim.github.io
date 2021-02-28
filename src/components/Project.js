@@ -10,7 +10,12 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl}) => (
             <div className="row-md-1">
                 <div className = 'card'>
                     
-                    <div className='card-img' style={ {backgroundImage: `url('${imgUrl}')`} }></div>
+                <div className='card-images'
+                    style={{
+                    backgroundImage: `url(${imgUrl})`
+                }}
+                />
+               
                             <h1 className ='card-name'>{title}</h1>
                             <p className ='card-description'>{description}</p>
                     <div className= 'card-footer'>
@@ -23,6 +28,7 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl}) => (
                        
                         
                     </div>
+                
                 </div>
             </div>
         </>

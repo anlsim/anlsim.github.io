@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Project from './Project';
 import '../styles/DirectoryMenu.scss';
 
 
-class ProjectMenu extends Component {
+class ProjectMenu extends React.Component {
     constructor(){
         super();
         this.state ={
@@ -13,7 +13,7 @@ class ProjectMenu extends Component {
                 description: 'Built a web application that allows people to save and organize web URLs on boards based on specific subjects or collections.',
                 imgUrl: '../assets/webMarks.png',
                 id: 1,
-                gitUrl:'https://github.com/anlsim/WebMarks',
+                gitUrl: 'https://github.com/anlsim/WebMarks',
                 linkUrl:'',
             
 
@@ -22,7 +22,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Task Tracker',
                 description: 'Team project to build a web application to help organize and keep track of tasks. Redesigned the View. Added new features to optimize the project.',
-                imgUrl: '../assets/taskTracker.png',
+                imgUrl: '../assets/webMarks.png',
                 id: 2,
                 gitUrl:'https://github.com/anlsim/TimeTracker',
                 linkUrl:'',
@@ -32,7 +32,7 @@ class ProjectMenu extends Component {
                 
                 title: 'Photography Portfolio',
                 description: 'Personal photography portfolio. Built with HTML and Bootstrap',
-                imgUrl: '../assets/photoWebsite.png',
+                imgUrl: '../assets/webMarks.png',
                 id: 3,
                 gitUrl:'https://github.com/anlsim/photography_website',
                 linkUrl:'',
@@ -47,8 +47,8 @@ class ProjectMenu extends Component {
             <>
             <div className='row'>
                {
-                    this.state.projects.map(({id, ...SectionProps}) => (
-                        <Project key={id} {...SectionProps}/>
+                    this.state.projects.map(({id, ...otherProjectProps}) => (
+                        <Project key={id} {...otherProjectProps}/>
                     ))
                 }
               

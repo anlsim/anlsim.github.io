@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './App.scss';
 import {
   BrowserRouter as Router,
   Route,
@@ -50,13 +51,13 @@ class App extends Component {
       <Router>
   
         <Switch>
-            <div>
+            
                 <Route path="/" exact render={() => <HomePage title={this.state.home.title}/> }/>
                 <Route path="/about" render={() => <AboutMePage title={this.state.about.title} />}  />
                 <Route path="/skills" render={() => <SkillsPage title={this.state.skills.title} />}  />
                 <Route path="/projects" render={() => <ProjectsPage title={this.state.projects.title} />}  />
                 <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />}  />
-            </div>
+            
         
         </Switch>
         
