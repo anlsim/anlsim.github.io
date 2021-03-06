@@ -2,6 +2,7 @@
 @import 'mediaQueries';
 
     .homepage{
+            
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -9,6 +10,12 @@
             padding: 20px 80px;
             
     }
+    .particles-js{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
     .header{
         
         width: 700px;

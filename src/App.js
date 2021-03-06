@@ -15,7 +15,6 @@ import SkillsPage from './pages/SkillsPage';
 import AboutMePage from './pages/AboutMePage';
 
 
-
 class App extends Component {
   constructor (props){
     super(props);
@@ -48,6 +47,7 @@ class App extends Component {
   render(){
     return (
       <>
+      
       <Router>
   
         <Switch>
