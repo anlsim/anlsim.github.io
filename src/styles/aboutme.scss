@@ -1,7 +1,7 @@
 @import 'colors';
 @import 'mediaQueries';
 .aboutMe{
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
@@ -27,9 +27,10 @@
 .aboutInfo{
     text-align: center;
     padding: 20px;
-    background-color: rgba($white-pas, 0.6);
+    background-color: $white-pas;
     border-radius: 5px;
-    color: $blue-pas;
+    color: $charcoal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     
     
     &-title{
@@ -43,11 +44,15 @@
 }
 
 
-
+    .jumbotron{
+    background-color: $white-pas;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     .education-title{
+        padding: 15px 15px;
         background-color:$yellow-pas;
-        color: $white-pas;
-        font-size: 80px;
+        color: $charcoal;
+        font-size: 60px;
         
     }
     .degree{
@@ -55,13 +60,13 @@
         font-size: 30px;
         &-title{
         font-size: 25px;
-        color:$blue-pas;
+        color:$gray-rhythm;
 
 
         }
         &-address{
             font-weight: lighter;
-            color:$blue-pas;
+            color:$charcoal;
 
         }
         
