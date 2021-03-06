@@ -10,13 +10,13 @@ class SkillsMenu extends Component {
                     id: 1,
                     title: 'Languages',
                     skillItem:[ 
-                        {name:'Java'},
-                        {name:'C#'},
-                        {name:'JavaScript'},
-                        {name:'SQL'},
-                        {name:'HTML5'},
-                        {name:'CSS3'},
-                        {name:'SASS'}
+                        {name:'⦿ Java'},
+                        {name:'⦿ C#'},
+                        {name:'⦿ JavaScript'},
+                        {name:'⦿ SQL'},
+                        {name:'⦿ HTML5'},
+                        {name:'⦿ CSS3'},
+                        {name:'⦿ SASS'}
                     ]
 
                 },
@@ -24,10 +24,10 @@ class SkillsMenu extends Component {
                     id: 2,
                     title: 'Frameworks',
                     skillItem:[ 
-                        {name:'Bootstrap'},
-                        {name:'React'},
-                        {name:'Node.Js'},
-                        {name:'ASP.NET'},
+                        {name:'⦿ Bootstrap'},
+                        {name:'⦿ React'},
+                        {name:'⦿ Node.Js'},
+                        {name:'⦿ ASP.NET'},
                     ]
 
                 },
@@ -35,12 +35,12 @@ class SkillsMenu extends Component {
                     id: 3,
                     title: 'Other',
                     skillItem:[ 
-                        {name:'OPP'},
-                        {name:'MVC'},
-                        {name:'GIT'},
-                        {name:'GitHub'},
-                        {name:'AWS'},
-                        {name:'Azure'},                 
+                        {name:'⦿ OPP'},
+                        {name:'⦿ MVC'},
+                        {name:'⦿ GIT'},
+                        {name:'⦿ GitHub'},
+                        {name:'⦿ AWS'},
+                        {name:'⦿ Azure'},                 
                     ]
 
                 },
@@ -48,11 +48,11 @@ class SkillsMenu extends Component {
                     id: 4,
                     title: 'Adobe',
                     skillItem:[ 
-                        {name:'Photoshop'},
-                        {name:'Illustrator'},
-                        {name:'Lightroom'},
-                        {name:'InDesign'},
-                        {name:'Xd'},
+                        {name:'⦿ Photoshop'},
+                        {name:'⦿ Illustrator'},
+                        {name:'⦿ Lightroom'},
+                        {name:'⦿ InDesign'},
+                        {name:'⦿ Xd'},
                     ]
 
                 },
