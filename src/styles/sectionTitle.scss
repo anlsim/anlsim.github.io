@@ -11,7 +11,7 @@
   
   .hero-img {
     position: absolute;
-    background-color: $yellow-pas;
+    background-color: $maize-yellow;
     left: 0;
     top: 0;
     width: 100%;
@@ -29,7 +29,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: $blue-pas;
+    background-color: $charcoal;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
   }
   .text{

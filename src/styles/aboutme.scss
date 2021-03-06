@@ -9,8 +9,8 @@
     background-image: url(../assets/andreaS.jpg);
     background-size: cover;
     background-position: center;
-    height: 350px;
-    height: 350px;
+    height: 500px;
+    height: auto;
     border-radius: 50%;
 
     @include mobile{
@@ -33,7 +33,7 @@
     
     
     &-title{
-        color: $yellow-pas;
+        color: $gray-rhythm;
         font-size: 60px;
     }
     &-description{
