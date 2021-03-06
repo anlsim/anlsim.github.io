@@ -30,7 +30,7 @@
     background-color: $white-pas;
     border-radius: 5px;
     color: $charcoal;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
     
     
     &-title{

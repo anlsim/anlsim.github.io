@@ -1,7 +1,7 @@
 @import 'colors';
 
 
-$dark: $charcoal !default;
+$dark:          $charcoal !default;
 $primary:       $blue-pas !default;
 $secondary:     $yellow-pas !default;
 $light:         $white-pas !default;
@@ -9,10 +9,10 @@ $light:         $white-pas !default;
 
 
 
-$navbar-light-color:                $blue-pas!default;
-$navbar-light-hover-color:          rgba($blue-pas, .7) !default;
-$navbar-light-active-color:         rgba($blue-pas, .9) !default;
-$navbar-light-disabled-color:       rgba($blue-pas, .3) !default;
-$navbar-light-toggler-border-color: rgba($blue-pas, .1) !default;
+$navbar-light-color:                $charcoal!default;
+$navbar-light-hover-color:          rgba($charcoal, .7) !default;
+$navbar-light-active-color:         rgba($charcoal, .9) !default;
+$navbar-light-disabled-color:       rgba($charcoal, .3) !default;
+$navbar-light-toggler-border-color: rgba($charcoal, .1) !default;
 
 @import "~bootstrap/scss/bootstrap";
