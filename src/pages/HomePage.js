@@ -12,21 +12,21 @@ const HomePage = () => {
         params={{ 
           particles: { 
             number: { 
-              value: 50, 
+              value: 60, 
               density: { 
                 enable: true, 
-                value_area: 1000, 
+                value_area: 900, 
               } 
             }, 
             color: {
                 value: '#30323D'
             },
             size: {
-                value: 4,
+                value: 5,
                 random: true,
                 anim: {
                     enable: true,
-                    speed: 3
+                    speed: 10
                 }
             },
             line_linked: {

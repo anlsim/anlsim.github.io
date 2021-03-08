@@ -2,7 +2,6 @@
 @import 'mediaQueries';
 
     .homepage{
-            
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -17,11 +16,11 @@
     }
     
     .header{
-        
+
+        position: relative;
         width: 700px;
         padding: 50px 50px;
         margin: 50px 50px;
-        
 
         &-title{
             color: $charcoal;
@@ -32,10 +31,6 @@
             font-size: 40px;
             
         }
-
-
-
-        
          
     }
     
@@ -47,14 +42,11 @@
             padding: 50px 50px;
 
             &-title{
-        
                 font-size: 65px;
-                
             }
             &-subtitle{
                 font-weight: lighter;
                 font-size: 30px;
-                
             }
         } 
         
@@ -66,11 +58,10 @@
             align-items: center;
             width: 375px;
             
-
             &-title{
                 align-items: center;
                 font-size: 45px;
-                
+               
             }
             &-subtitle{
                 align-items: center;

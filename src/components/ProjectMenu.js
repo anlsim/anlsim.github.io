@@ -11,7 +11,7 @@ class ProjectMenu extends React.Component {
             
             {
                 
-                title: 'Personal Portolio',
+                title: 'Personal Portfolio',
                 description: 'Built a web portfolio to show projects, skills, and other relevant information',
                 imgUrl: '../assets/webMarks.png',
                 id: 1,
