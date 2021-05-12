@@ -43,13 +43,8 @@ const HomePage = () => {
             </div>
             <div>
                 <DirectoryMenu/>
-                
             </div> 
-          
-           
         </div>
-       
-        
         
         </>
         

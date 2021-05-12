@@ -3,9 +3,12 @@ import {withRouter} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import '../styles/Project.scss';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
+   
         <>
             <div className="row-md-1">
                 <div className = 'card'>
@@ -23,6 +26,13 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
                             <a className="card-footer-icon"  href={gitUrl} target="blank">
                             <FontAwesomeIcon icon={faGithub}/>
                             </a>
+                            {
+                            linkUrl && 
+                            <a className="card-footer-icon"  href={linkUrl} target="blank">
+                            <FontAwesomeIcon icon={faDesktop}/>
+                            </a>
+                            }
+                         
                         </h3>                           
                     </div>
                 

@@ -17,7 +17,7 @@ class ProjectMenu extends React.Component {
                 id: 1,
                 gitUrl: 'https://github.com/anlsim/anlsim.github.io',
                 tools:'React, Sass, Bootstrap',
-                linkUrl:'',
+                linkUrl:'https://anlsim.github.io/',
                 
     
             },
@@ -52,7 +52,7 @@ class ProjectMenu extends React.Component {
                 id: 4,
                 gitUrl:'https://github.com/anlsim/photography_website',
                 tools:'HTML, Bootstrap',
-                linkUrl:'',
+                linkUrl:'https://anlsim.github.io/photography_website/',
 
             },
        

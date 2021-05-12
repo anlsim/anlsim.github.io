@@ -26,6 +26,7 @@ class SkillsMenu extends Component {
                     skillItem:[ 
                         {name:'⦿ Bootstrap'},
                         {name:'⦿ React'},
+                        {name:'⦿ VUE.Js'},
                         {name:'⦿ Node.Js'},
                         {name:'⦿ ASP.NET'},
                     ]
@@ -40,7 +41,8 @@ class SkillsMenu extends Component {
                         {name:'⦿ GIT'},
                         {name:'⦿ GitHub'},
                         {name:'⦿ AWS'},
-                        {name:'⦿ Azure'},                 
+                        {name:'⦿ Azure'},   
+                        {name:'⦿ Figma'},               
                     ]
 
                 },

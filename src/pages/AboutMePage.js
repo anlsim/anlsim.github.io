@@ -24,6 +24,19 @@ const AboutMePage = (props) => {
        
         <br/>
         <div className="container pt-5">
+          <h1 className="education-title">Experience</h1>
+          <div className ="jumbotron">
+            <h2 className="degree">Frontend Developer • March 2021 - Present</h2>
+            <h3 className="degree-title">Impakter • Internship</h3>
+            <h4 className="degree-address">Currently working with a global team
+             developing reusable code components
+             to complete projects in the future. Designed UI
+            wireframes using Figma. Developed Frontend with
+              Vue.js and Bootstrap.
+            </h4>
+          </div>
+        </div>
+        <div className="container pt-5">
           <h1 className="education-title">Education</h1>
           <div className ="jumbotron">
             <h2 className="degree">BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h2>
@@ -41,6 +54,7 @@ const AboutMePage = (props) => {
             <h4 className="degree-address">Universidad de Guadalajara - CUAAD • Guadalajara, MX</h4>
           </div>
         </div>
+     
       
       </>
       
