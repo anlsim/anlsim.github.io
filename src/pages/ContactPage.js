@@ -13,24 +13,20 @@ const ContactPage = (props) => {
      
         <SectionTitle title={props.title}/>
         <div className="container">
-            <h1>Feel free to contact me!</h1>
-            <div className="row">                 
-                <div className="col">
+       
                     <h2 className='contactIcon'>
                         <a className='contactIcon-color' href="https://github.com/anlsim" target="blank">
                             <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </h2>
-                </div>
-                <div className="col">
+              
+            
                     <h2 className='contactIcon'>
                         <a className='contactIcon-color' href="https://www.linkedin.com/in/andrea-simental/" target="blank">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </h2 >
-                </div>
-                                                        
-            </div>
+       
         </div>
     </>
          
