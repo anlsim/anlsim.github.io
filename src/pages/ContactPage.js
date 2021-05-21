@@ -12,7 +12,7 @@ const ContactPage = (props) => {
         <NavBar />
      
         <SectionTitle title={props.title}/>
-        <div className="container">
+        <div className="contactContainer">
        
                     <h2 className='contactIcon'>
                         <a className='contactIcon-color' href="https://github.com/anlsim" target="blank">
