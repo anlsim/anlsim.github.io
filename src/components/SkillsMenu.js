@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Skill from './Skill';
 
-class SkillsMenu extends Component {
+class SkillsMenu extends React.Component {
     constructor(){
         super();
         this.state ={

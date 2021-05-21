@@ -14,7 +14,7 @@ const Skill = (props) => (
                             <div className="skill col mr-2">
                             
                                 {props.skillItem.map(item=>{
-                                    return <h4 className="skill-item">{item.name}</h4>
+                                    return <h4  className="skill-item">{item.name}</h4>
                                 })}  
                             </div>
                             

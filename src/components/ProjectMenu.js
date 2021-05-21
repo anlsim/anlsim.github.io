@@ -2,15 +2,12 @@ import React from 'react';
 import Project from './Project';
 import '../styles/DirectoryMenu.scss';
 
-
 class ProjectMenu extends React.Component {
     constructor(){
         super();
         this.state ={
             projects:  [
-            
             {
-                
                 title: 'Personal Portfolio',
                 description: 'Built a web portfolio to show projects, skills, and other relevant information',
                 imgUrl: '../assets/webMarks.png',

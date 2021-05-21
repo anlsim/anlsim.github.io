@@ -10,7 +10,7 @@ import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
    
         <>
-            <div className="row-md-1">
+            <div className="col">
                 <div className = 'card'>
                     <div className='card-title'>
                         <h1 className ='card-name'>{title}</h1>

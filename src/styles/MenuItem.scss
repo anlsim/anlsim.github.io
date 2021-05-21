@@ -42,19 +42,20 @@
     height: 90px;
     padding: 0 25px;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 60px;
     justify-content: center;
 }
 
 @include tablet{
     .pentagon{
-        width: 200px;
-        height: 210px;
+        width: 250px;
+        height: 260px;
     }  
 
     .title{
-        margin-top: 50px;
-        font-size: 25px;
+        margin-top: 70px;
+        font-size: 30px;
+        font-weight: bold;
     }
 }
 
