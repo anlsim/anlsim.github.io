@@ -1,10 +1,15 @@
 @import 'colors';
 @import 'mediaQueries';
+.ProjectContainer{
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+
 
 .card {
 
   position: relative;
-  display: flex;
+
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
@@ -17,7 +22,7 @@
 
 
   &-title{
-   
+      
       border-color: none;
       border-bottom: none;
       height: 150px;
@@ -49,6 +54,7 @@
 
   &-footer{
     clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
+    background-image: url('../assets/backgroundImageYellow.jpg');
     height: 115px;
     align-content: flex-end;
     background-color: $gray-lavander;
@@ -60,7 +66,7 @@
     &-icon{
       padding:10px;
       align-content: center;
-      color: $white-pas;
+      color: $gray-rhythm;
       font-size: 50px;
     }
     
@@ -72,6 +78,8 @@
   }
 
 }
+}
+
 
 @include tablet{
   .card{

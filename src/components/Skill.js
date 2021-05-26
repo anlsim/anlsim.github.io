@@ -4,7 +4,7 @@ import '../styles/Skill.scss';
 
 const Skill = (props) => (
         <>
-           <div className="col-xl-3 col-md-6 mb-4">
+           <div className="skillContainer">
                 <div className="card">
                     <div className="card-header">
                         <h2 className ="card-title">{props.title}</h2>

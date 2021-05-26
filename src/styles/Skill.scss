@@ -1,38 +1,58 @@
 @import 'colors';
-.card{
-    &-body{
-        padding: 10px;
+.skillContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+   
+
+    .card{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
+    background-color: $white-pas;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    width: 400px;
+        &-body{
+            padding: 10px;
+        }
+        
+        &-header{
+            background-image: url('../assets/backgroundImageYellow.jpg');
+            border-color: none;
+            border-bottom: none;
+            height: 150px;
+            //background-color: $gray-rhythm;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+            align-items: center;
+        }
+        &-title{
+            margin-top: 15px;
+            align-items: center;
+            color: $charcoal;
+            font-size: 40px;
+
+        }
     }
-    
-    &-header{
-        border-color: none;
-        border-bottom: none;
-        height: 150px;
-        background-color: $gray-rhythm;
-        overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-        align-items: center;
-    }
-    &-title{
-        align-items: center;
+
+
+
+    .skill{
         color: $white-pas;
-        font-size: 50px;
-        font-weight: 500;
+        font-size: 40px;
+        
 
+        &-item{
+            margin-left: 10px;
+            padding: 5px;
+            color: $charcoal;
+        }
     }
+
     
-}
-
-
-
-.skill{
-    color: $white-pas;
-    font-size: 40px;
     
-
-    &-item{
-        margin-left: 10px;
-        padding: 5px;
-        color: $charcoal;
-    }
 }
