@@ -13,8 +13,12 @@ const Skill = (props) => (
                         <div className="row align-items-center">
                             <div className="skill col mr-2">
                             
-                                {props.skillItem.map(item=>{
-                                    return <h4  className="skill-item">{item.name}</h4>
+                                {props.skillItem.map((item, key) =>{
+                                    return(
+                                    <h4  key ={key} className="skill-item">
+                                        <i className={item.fAwesome}></i>{item.name}
+                                    </h4>
+                                    )
                                 })}  
                             </div>
                             

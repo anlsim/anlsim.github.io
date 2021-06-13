@@ -42,13 +42,24 @@
 
 
     .skill{
+        
+        justify-content: center;
+        align-items: baseline;
         color: $white-pas;
         font-size: 40px;
         
 
         &-item{
+            
             margin-left: 10px;
             padding: 5px;
+            color: $charcoal;
+        } 
+        .fab{
+            
+            margin-left: 10px;
+            padding: 10px;
+            font-size: 50px;
             color: $charcoal;
         }
     }

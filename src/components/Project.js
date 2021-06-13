@@ -19,7 +19,20 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
                         <p className ='card-description'>{description}</p>
                         <hr/>
                         <h2 className='card-tools'>Tools used:</h2>
-                        <p className ='card-description'>{tools}</p>
+                        <div className="card-toolsDiv">
+
+                        
+                        {tools.map((t, index) => {
+                            return(
+                                <>
+                                 <p className="card-toolsDiv-description ">{t.name} </p>
+                                <i className={t.fAwasome}/>
+                                
+                                </>
+                        // </p>
+                            )
+                        })}
+                        </div>
                     </div>  
                     <div className= 'card-footer'>
                         <h3 className='card-footer-content'>

@@ -13,9 +13,23 @@ class ProjectMenu extends React.Component {
                 imgUrl: '../assets/webMarks.png',
                 id: 1,
                 gitUrl: 'https://github.com/anlsim/anlsim.github.io',
-                tools:'React, Sass, Bootstrap',
-                linkUrl:'https://anlsim.github.io/',
-                
+                tools:[
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-react'
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-sass'
+                    },
+            
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-bootstrap'
+                    },
+
+                ],
+                linkUrl:'https://anlsim.github.io/', 
     
             },
             {
@@ -25,10 +39,30 @@ class ProjectMenu extends React.Component {
                 imgUrl: '../assets/webMarks.png',
                 id: 2,
                 gitUrl: 'https://github.com/anlsim/WebMarks',
-                tools:'C#, ASP.NET, MVC, Bootstrap',
-                linkUrl:'',
-            
+                tools:[
+                    {
+                        name:'C#',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'ASP.NET',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'MVC',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-css3-alt'
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-bootstrap'
+                    },
 
+                ],
+                linkUrl:'',
             },
             {
                 
@@ -37,7 +71,29 @@ class ProjectMenu extends React.Component {
                 imgUrl: '../assets/webMarks.png',
                 id: 3,
                 gitUrl:'https://github.com/anlsim/TimeTracker',
-                tools:'C#, ASP.NET, MVC, Bootstrap',
+                tools:[
+                    {
+                        name:'C#',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'ASP.NET',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'MVC',
+                        fAwasome: ''
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-css3-alt'
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-bootstrap'
+                    },
+
+                ],
                 linkUrl:'',
                 
             },
@@ -48,7 +104,21 @@ class ProjectMenu extends React.Component {
                 imgUrl: '../assets/webMarks.png',
                 id: 4,
                 gitUrl:'https://github.com/anlsim/photography_website',
-                tools:'HTML, Bootstrap',
+                tools:[
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-html5'
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-css3-alt'
+                    },
+                    {
+                        name:'',
+                        fAwasome: 'fab fa-bootstrap'
+                    },
+
+                ],
                 linkUrl:'https://anlsim.github.io/photography_website/',
 
             },

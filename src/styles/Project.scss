@@ -5,11 +5,10 @@
   justify-content: center;
   margin-left: 40px;
 
-
+  
 .card {
-
+  display: flex;
   position: relative;
-
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
@@ -22,7 +21,6 @@
 
 
   &-title{
-      
       border-color: none;
       border-bottom: none;
       height: 150px;
@@ -37,20 +35,32 @@
     margin-top: 10px;
     color: $white-pas;
     padding: 1rem 1.5rem;
-    
   }
+
   &-tools{
     color: $charcoal;
     font-size: 25px;
   }
  
-  &-description {
-    font-weight: lighter;
-    text-align: center;
-    color: $charcoal;
-    font-size: 20px;
+  
+
+  .fab{
+    margin: 10px;
     padding: 10px;
+    font-size: 40px;
+    color: $charcoal;
   }
+  &-toolsDiv{
+    display: flex;
+    &-description {
+    
+      text-align: center;
+      color: $charcoal;
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+
 
   &-footer{
     clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
@@ -71,6 +81,7 @@
     }
     
   }
+
   &:hover {
     &-icon{
       color: $maize-yellow;
