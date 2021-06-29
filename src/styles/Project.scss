@@ -33,11 +33,9 @@
     
 
     .fab{
-      margin: 10px;
-      padding: 10px;
-      font-size: 40px;
-      color: $charcoal;
+      @include fontAwesome;
     }
+
     &-toolsDiv{
       display: flex;
       &-description {

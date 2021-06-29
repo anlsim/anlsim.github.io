@@ -15,7 +15,6 @@
             border-color: none;
             border-bottom: none;
             height: 150px;
-            //background-color: $gray-rhythm;
             overflow: hidden;
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
             align-items: center;
@@ -44,11 +43,7 @@
             color: $charcoal;
         } 
         .fab{
-            
-            margin-left: 10px;
-            padding: 10px;
-            font-size: 50px;
-            color: $charcoal;
+            @include fontAwesome;
         }
     }
 
