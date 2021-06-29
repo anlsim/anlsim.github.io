@@ -4,7 +4,7 @@
     margin-top: 50px;
     margin-left: 40px;
 }
-//Card styles
+// Card styles ///
 @mixin cardContainer{
     position: relative;
     border-radius: 8px;
@@ -16,7 +16,15 @@
     border: none;
     width: 400px;
 }
-
+@mixin headerCard{
+            border-color: none;
+            border-bottom: none;
+            height: 150px;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+            align-items: center;
+}
+// 
 @mixin fontAwesome{
     margin-left: 10px;
     padding: 10px;

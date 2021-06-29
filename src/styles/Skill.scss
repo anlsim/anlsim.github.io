@@ -11,13 +11,9 @@
         }
         
         &-header{
+            @include headerCard;
             background-image: url('../assets/backgroundImageYellow.jpg');
-            border-color: none;
-            border-bottom: none;
-            height: 150px;
-            overflow: hidden;
-            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-            align-items: center;
+           
         }
         &-title{
             margin-top: 15px;

@@ -9,13 +9,9 @@
     @include cardContainer;
         
     &-title{
-        border-color: none;
-        border-bottom: none;
-        height: 150px;
-        background-color: $gray-rhythm;
-        overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-        align-items: center;
+      @include headerCard;
+      background-color: $gray-rhythm;
+        
     
     } 
     &-name {
@@ -30,10 +26,10 @@
       font-size: 25px;
     }
   
-    
 
     .fab{
       @include fontAwesome;
+
     }
 
     &-toolsDiv{
