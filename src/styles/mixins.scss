@@ -1,0 +1,17 @@
+@mixin pageDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+@mixin cardContainer{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
+    background-color: $white-pas;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    width: 400px;
+}

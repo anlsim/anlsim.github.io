@@ -25,7 +25,7 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
                         {tools.map((t, index) => {
                             return(
                                 <>
-                                 <p className="card-toolsDiv-description ">{t.name} </p>
+                                 <p className="card-toolsDiv-description">{t.name} </p>
                                 <i className={t.fAwasome}/>
                                 
                                 </>

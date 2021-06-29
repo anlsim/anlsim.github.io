@@ -1,94 +1,82 @@
 @import 'colors';
 @import 'mediaQueries';
+@import 'mixins';
+
 .ProjectContainer{
-  display: flex;
-  justify-content: center;
-  margin-left: 40px;
+ @include pageDiv;
 
-  
-.card {
-  display: flex;
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
-  background-color: $white-pas;
-  text-align: center;
-  margin: 10px;
-  border: none;
-  width: 400px;
-      
-
-
-  &-title{
-      border-color: none;
-      border-bottom: none;
-      height: 150px;
-      background-color: $gray-rhythm;
-      overflow: hidden;
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-      align-items: center;
-  
-  } 
-  &-name {
-    font-size: 30px;
-    margin-top: 10px;
-    color: $white-pas;
-    padding: 1rem 1.5rem;
-  }
-
-  &-tools{
-    color: $charcoal;
-    font-size: 25px;
-  }
- 
-  
-
-  .fab{
-    margin: 10px;
-    padding: 10px;
-    font-size: 40px;
-    color: $charcoal;
-  }
-  &-toolsDiv{
-    display: flex;
-    &-description {
+  .card {
+    @include cardContainer;
+        
+    &-title{
+        border-color: none;
+        border-bottom: none;
+        height: 150px;
+        background-color: $gray-rhythm;
+        overflow: hidden;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+        align-items: center;
     
-      text-align: center;
+    } 
+    &-name {
+      font-size: 30px;
+      margin-top: 10px;
+      color: $white-pas;
+      padding: 1rem 1.5rem;
+    }
+
+    &-tools{
       color: $charcoal;
-      font-size: 20px;
-      padding: 10px;
+      font-size: 25px;
     }
-  }
-
-
-  &-footer{
-    clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
-    background-image: url('../assets/backgroundImageYellow.jpg');
-    height: 115px;
-    align-content: flex-end;
-    background-color: $gray-lavander;
-
-    &-content{
-      margin-top: 25px;
-    }
-
-    &-icon{
-      padding:10px;
-      align-content: center;
-      color: $gray-rhythm;
-      font-size: 50px;
-    }
+  
     
-  }
 
-  &:hover {
-    &-icon{
-      color: $maize-yellow;
+    .fab{
+      margin: 10px;
+      padding: 10px;
+      font-size: 40px;
+      color: $charcoal;
     }
-  }
+    &-toolsDiv{
+      display: flex;
+      &-description {
+      
+        text-align: center;
+        color: $charcoal;
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
 
-}
+
+    &-footer{
+      clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
+      background-image: url('../assets/backgroundImageYellow.jpg');
+      height: 115px;
+      align-content: flex-end;
+      background-color: $gray-lavander;
+
+      &-content{
+        margin-top: 25px;
+      }
+
+      &-icon{
+        padding:10px;
+        align-content: center;
+        color: $gray-rhythm;
+        font-size: 50px;
+      }
+      
+    }
+
+    &:hover {
+      &-icon{
+        color: $maize-yellow;
+      }
+    }
+
+  }
 }
 
 
