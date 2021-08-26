@@ -26,13 +26,25 @@ const AboutMePage = (props) => {
         <div className="container pt-5">
           <h1 className="education-title">Experience</h1>
           <div className ="jumbotron">
-            <h2 className="degree">Frontend Developer • March 2021 - Present</h2>
+            <h2 className="degree">Junior Developer • July  - PRESENT</h2>
+            <h3 className="degree-title">D2 Creative• Full Time</h3>
+            <h4 className="degree-address">
+              Currently developing websites on a variety of platforms.
+            </h4>
+          </div>
+          <div className ="jumbotron">
+            <h2 className="degree">Frontend Developer • March  - July 2021</h2>
             <h3 className="degree-title">Impakter • Internship</h3>
-            <h4 className="degree-address">Currently working with a global team
-             developing reusable code components
-             to complete projects in the future. Designed UI
-            wireframes using Figma. Developed Frontend with
-              Vue.js and Bootstrap.
+            <h4 className="degree-address">
+              Design and develop the frontend of the
+              Certificate application while utilizing reusable code
+              with Vue.js and Bootstrap. to complete projects in the future.
+              Designed UI wireframes using Figma. Developed Frontend with
+              Vue.js and Bootstrap.<br/><br/>
+              •	Designed and developed UI wireframes using Figma.<br/>
+              •	Created UI of the certificate tool to detect environmental or social impact for companies.<br/>
+              •	Transformed business and functional needs into documented technical
+               specifications in collaboration with team members.
             </h4>
           </div>
         </div>
