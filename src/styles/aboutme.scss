@@ -1,48 +1,50 @@
 @import 'colors';
 @import 'mediaQueries';
-.aboutMe{
+.about-me{
     width: 50%;
     margin: auto;
+    .img{
+        background-image: url(../assets/profilePic.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        height: auto;
+        border-radius: 50%;
+    
+        @include mobile{
+    
+            height: 290px;
+            height: 290px;
+            margin-bottom: 10px;
+        }
+    
+        
+    
+    }
+    &__info{
+        text-align: center;
+        padding: 20px;
+        background-color: $white-pas;
+        border-radius: 5px;
+        color: $charcoal;
+        box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
+        
+        
+        &--title{
+            color: $gray-rhythm;
+            font-size: 60px;
+        }
+        &--description{
+            font-weight: lighter;
+            font-size: 30px;
+        }
+    }
     
 }
 
-.img{
-    background-image: url(../assets/profilePic.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    height: auto;
-    border-radius: 50%;
 
-    @include mobile{
 
-        height: 290px;
-        height: 290px;
-        margin-bottom: 10px;
-    }
 
-    
-
-}
-
-.aboutInfo{
-    text-align: center;
-    padding: 20px;
-    background-color: $white-pas;
-    border-radius: 5px;
-    color: $charcoal;
-    box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
-    
-    
-    &-title{
-        color: $gray-rhythm;
-        font-size: 60px;
-    }
-    &-description{
-        font-weight: lighter;
-        font-size: 30px;
-    }
-}
 
 
     .jumbotron{
@@ -59,13 +61,13 @@
     .degree{
         color: $yellow-pas;
         font-size: 30px;
-        &-title{
+        &__title{
         font-size: 25px;
         color:$gray-rhythm;
 
 
         }
-        &-address{
+        &__address{
             font-weight: lighter;
             color:$charcoal;
 
@@ -74,23 +76,24 @@
     }
 
 @include mobile{
-   
-    .aboutInfo{
-        
-        
-        &-title{
-            color: $yellow-pas;
-            font-size: 40px;
+    .about-me{
+        &__info{
+            
+            
+            &--title{
+                color: $yellow-pas;
+                font-size: 40px;
+            }
+            &--description{
+                font-weight: lighter;
+                font-size: 25px;
+            }
         }
-        &-description{
-            font-weight: lighter;
-            font-size: 25px;
-        }
-    }
 
-    .education-title{
-       
-            font-size: 60px;
+        .education-title{
+        
+                font-size: 60px;
+        }
     }
     
 }
