@@ -5,8 +5,6 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-
-import './App.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';

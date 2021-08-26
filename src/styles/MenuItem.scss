@@ -25,40 +25,44 @@
         transform: scale(1.1);  
         
     }
-
+    &__content{ 
+        color: $charcoal;
+        text-align: center;
+        display: block;
+    
+        &:hover {
+            color: $white-pas;
+        }
+    }
+    
+    &__title{
+        height: 90px;
+        padding: 0 25px;
+        align-items: center;
+        margin-top: 60px;
+        justify-content: center;
+    }
+    
 
    
 
 }
-.content{ 
-    color: $charcoal;
-    text-align: center;
-    display: block;
 
-    &:hover {
-        color: $white-pas;
-    }
-}
 
-.title{
-    height: 90px;
-    padding: 0 25px;
-    align-items: center;
-    margin-top: 60px;
-    justify-content: center;
-}
 
 @include tablet{
     .pentagon{
         width: 250px;
         height: 260px;
+
+        &__title{
+            margin-top: 70px;
+            font-size: 30px;
+            font-weight: bold;
+        }
     }  
 
-    .title{
-        margin-top: 70px;
-        font-size: 30px;
-        font-weight: bold;
-    }
+   
 }
 
 
