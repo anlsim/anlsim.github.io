@@ -12,17 +12,17 @@ const ContactPage = (props) => {
         <NavBar />
      
         <SectionTitle title={props.title}/>
-        <div className="contactContainer">
+        <div className="contact">
        
-                    <h2 className='contactIcon'>
-                        <a className='contactIcon-color' href="https://github.com/anlsim" target="blank">
+                    <h2 className="contact__icon">
+                        <a className="contact__icon-color" href="https://github.com/anlsim" target="blank">
                             <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </h2>
               
             
-                    <h2 className='contactIcon'>
-                        <a className='contactIcon-color' href="https://www.linkedin.com/in/andrea-simental/" target="blank">
+                    <h2 className="contact__icon">
+                        <a className="contact__icon-color" href="https://www.linkedin.com/in/andrea-simental/" target="blank">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </h2 >
