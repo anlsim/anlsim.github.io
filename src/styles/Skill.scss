@@ -6,16 +6,16 @@
    
     .card{
         @include cardContainer;
-        &-body{
+        &__body{
             padding: 10px;
         }
         
-        &-header{
+        &__header{
             @include headerCard;
             background-image: url('../assets/backgroundImageYellow.jpg');
            
         }
-        &-title{
+        &__title{
             margin-top: 15px;
             align-items: center;
             color: $charcoal;
@@ -32,7 +32,7 @@
         font-size: 40px;
         
 
-        &-item{
+        &__item{
             
             margin-left: 10px;
             padding: 5px;

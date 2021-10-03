@@ -8,20 +8,20 @@
   .card {
     @include cardContainer;
         
-    &-title{
+    &__title{
       @include headerCard;
       background-color: $gray-rhythm;
         
     
     } 
-    &-name {
+    &__name {
       font-size: 30px;
       margin-top: 10px;
       color: $white-pas;
       padding: 1rem 1.5rem;
     }
 
-    &-tools{
+    &__tools{
       color: $charcoal;
       font-size: 25px;
     }
@@ -32,9 +32,9 @@
 
     }
 
-    &-toolsDiv{
+    &__toolsDiv{
       display: flex;
-      &-description {
+      &__description {
       
         text-align: center;
         color: $charcoal;
@@ -44,18 +44,18 @@
     }
 
 
-    &-footer{
+    &__footer{
       clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
       background-image: url('../assets/backgroundImageYellow.jpg');
       height: 115px;
       align-content: flex-end;
       background-color: $gray-lavander;
 
-      &-content{
+      &__content{
         margin-top: 25px;
       }
 
-      &-icon{
+      &__icon{
         padding:10px;
         align-content: center;
         color: $gray-rhythm;
@@ -65,7 +65,7 @@
     }
 
     &:hover {
-      &-icon{
+      &__icon{
         color: $maize-yellow;
       }
     }

@@ -11,21 +11,21 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
    
         <>
             <div className="project">
-                <div className = 'card'>
-                    <div className='card-title'>
-                        <h1 className ='card-name'>{title}</h1>
+                <div className ='card'>
+                    <div className='card__title'>
+                        <h1 className ='card__name'>{title}</h1>
                     </div>
-                    <div className='card-body'>
-                        <p className ='card-description'>{description}</p>
+                    <div className='card__body'>
+                        <p className ='card__description'>{description}</p>
                         <hr/>
-                        <h2 className='card-tools'>Tools used:</h2>
-                        <div className="card-toolsDiv">
+                        <h2 className='card__tools'>Tools used:</h2>
+                        <div className="card__toolsDiv">
 
                         
                         {tools.map((t, index) => {
                             return(
                                 <>
-                                 <p className="card-toolsDiv-description">{t.name} </p>
+                                 <p className="card__toolsDiv__description">{t.name} </p>
                                 <i className={t.fAwasome}/>
                                 
                                 </>
@@ -34,14 +34,14 @@ const Project = ({title, description, linkUrl, imgUrl, gitUrl, tools}) => (
                         })}
                         </div>
                     </div>  
-                    <div className= 'card-footer'>
-                        <h3 className='card-footer-content'>
-                            <a className="card-footer-icon"  href={gitUrl} target="blank">
+                    <div className= 'card__footer'>
+                        <h3 className='card__footer__content'>
+                            <a className="card__footer__icon"  href={gitUrl} target="blank">
                             <FontAwesomeIcon icon={faGithub}/>
                             </a>
                             {
                             linkUrl && 
-                            <a className="card-footer-icon"  href={linkUrl} target="blank">
+                            <a className="card__footer__icon"  href={linkUrl} target="blank">
                             <FontAwesomeIcon icon={faDesktop}/>
                             </a>
                             }
