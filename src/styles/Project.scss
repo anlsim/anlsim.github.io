@@ -1,6 +1,6 @@
-@import 'colors';
-@import 'mediaQueries';
-@import 'mixins';
+@import './variables/colors';
+@import './variables/mediaQueries';
+@import './variables/mixins';
 
 .project{
  @include pageDiv;
