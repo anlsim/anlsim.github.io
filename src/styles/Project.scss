@@ -74,7 +74,7 @@
 }
 
 
-@include tablet{
+@media (min-width: $tablet) {
   .card{
       width: 325px;
   }  

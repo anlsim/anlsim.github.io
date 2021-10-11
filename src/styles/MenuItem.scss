@@ -49,8 +49,7 @@
 }
 
 
-
-@include tablet{
+@media (min-width: $tablet) {
     .pentagon{
         width: 250px;
         height: 260px;

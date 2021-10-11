@@ -11,12 +11,12 @@
         height: auto;
         border-radius: 50%;
     
-        @include mobile{
+        // @include mobile{
     
-            height: 290px;
-            height: 290px;
-            margin-bottom: 10px;
-        }
+        //     height: 290px;
+        //     height: 290px;
+        //     margin-bottom: 10px;
+        // }
     
         
     
@@ -75,7 +75,7 @@
         
     }
 
-@include mobile{
+@media (min-width: $mini-tablet) { //mobile
     .about-me{
         &__info{
             
