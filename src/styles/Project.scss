@@ -3,8 +3,9 @@
 @import './variables/mixins';
 
 .project{
- @include pageDiv;
 
+  display: flex;
+  justify-content: center;
   .card {
     @include cardContainer;
         
@@ -33,13 +34,11 @@
     }
 
     &__toolsDiv{
-      display: flex;
+      display: inline-block;
       &__description {
-      
         text-align: center;
         color: $charcoal;
         font-size: 20px;
-        padding: 10px;
       }
     }
 
@@ -75,11 +74,24 @@
 
 
 @media (min-width: $tablet) {
-  .card{
-      width: 325px;
-  }  
-
+  .project{
+    .card{
+        width: 60%;
+    }  
+  }
 
 }
+
+
+@media (min-width: $small-desktop) {
+  .project{
+
+    .card{
+      width: 230px;
+  }
+  }
+
+}
+
 
 
