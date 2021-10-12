@@ -1,25 +1,19 @@
-@import 'colors';
-@import 'mediaQueries';
-.about-me{
-    width: 50%;
-    margin: auto;
-    .img{
+@import './variables/colors';
+@import './variables/mediaQueries';
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    gap: 15px;
+    &__img{
         background-image: url(../assets/profilePic.jpg);
         background-size: cover;
         background-position: center;
-        height: 500px;
-        height: auto;
+        width: 290px;
+        height: 290px;
         border-radius: 50%;
-    
-        @include mobile{
-    
-            height: 290px;
-            height: 290px;
-            margin-bottom: 10px;
-        }
-    
-        
-    
     }
     &__info{
         text-align: center;
@@ -28,73 +22,55 @@
         border-radius: 5px;
         color: $charcoal;
         box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
-        
-        
         &--title{
-            color: $gray-rhythm;
-            font-size: 60px;
+            color: $yellow-pas;
+            font-size: 40px;
         }
         &--description{
             font-weight: lighter;
-            font-size: 30px;
+            font-size: 25px;
         }
     }
-    
 }
-
-
-
-
-
-
-    .jumbotron{
+.jumbotron{
     background-color: $white-pas;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .education-title{
-        padding: 15px 15px;
-        background-color:$yellow-pas;
-        color: $charcoal;
-        font-size: 60px;
-        
-    }
-    .degree{
-        color: $yellow-pas;
-        font-size: 30px;
-        &__title{
+}
+.education-title{
+    padding: 15px 15px;
+    background-color:$yellow-pas;
+    color: $charcoal;
+    font-size: 60px;  
+}
+.degree{
+    color: $yellow-pas;
+    font-size: 30px;
+    &__title{
         font-size: 25px;
         color:$gray-rhythm;
-
-
-        }
-        &__address{
-            font-weight: lighter;
-            color:$charcoal;
-
-        }
-        
     }
-
-@include mobile{
-    .about-me{
+    &__address{
+        font-weight: lighter;
+        color:$charcoal;
+    }
+}
+@media (min-width: $tablet) {
+    .aboutme{
+        flex-direction: row;
+        margin-inline: 40px;
         &__info{
-            
-            
+            width: 60%;
             &--title{
                 color: $yellow-pas;
-                font-size: 40px;
             }
             &--description{
                 font-weight: lighter;
-                font-size: 25px;
             }
         }
-
-        .education-title{
-        
-                font-size: 60px;
-        }
     }
-    
 }
-
+@media (min-width: $desktop) {
+    .aboutme{
+        margin-inline: 250px;
+    }
+}

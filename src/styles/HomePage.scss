@@ -1,42 +1,37 @@
-@import 'colors';
-@import 'mediaQueries';
-
+@import './variables/colors.scss';
+@import './variables/mediaQueries';
     .homepage{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 80px;
+        &__particles{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        &__header{
+            position: relative;
+            width: 375px;
+            padding: 50px 50px;
+            margin: 50px 50px;
             align-items: center;
-            padding: 20px 80px;
+            width: 375px;
+            &--title{
+                align-items: center;
+                font-size: 45px;
+            }
+            &--subtitle{
+                font-weight: lighter;
+                align-items: center;
+                font-size: 25px;
+            }   
+        }
 
-            &__particles-js{
-                height: 100%;
-                width: 100%;
-                position: absolute;
-            }
-            
-            &__header{
-        
-                position: relative;
-                width: 700px;
-                padding: 50px 50px;
-                margin: 50px 50px;
-        
-                &--title{
-                    color: $charcoal;
-                    font-size: 100px;
-                }
-                &--subtitle{
-                    font-weight: lighter;
-                    font-size: 40px;
-                    
-                }
-                 
-            }
-            
     }
-    
-    
-    @include tablet{
+    @media (min-width: $mini-tablet) {
         .homepage{
             &__header{
                 width: 500px;
@@ -47,36 +42,23 @@
                     font-size: 65px;
                 }
                 &--subtitle{
-                    font-weight: lighter;
                     font-size: 30px;
                 }
             } 
+        }
     }
-        
-    }
-
-    @include mobile {
-        .homepage{
+    @media (min-width: $small-desktop) {
+         .homepage{
+            padding: 20px 80px;
             &__header{
-                align-items: center;
-                width: 375px;
-                
+                width: 700px; 
                 &--title{
-                    align-items: center;
-                    font-size: 45px;
-                
+                    font-size: 100px;
                 }
                 &--subtitle{
-                    align-items: center;
-                    font-weight: lighter;
-                    font-size: 25px;
-                    
+                    font-size: 40px;
                 }
-            } 
-        }
-        
+            }
+         }
     }
-
-
-
 

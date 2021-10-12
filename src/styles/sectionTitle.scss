@@ -1,5 +1,5 @@
-@import 'colors';
-@import 'mediaQueries';
+@import './variables/colors';
+@import './variables/mediaQueries';
 
 .hero {
     position: relative;
@@ -38,13 +38,13 @@
       padding: 5px 25px;
   }
 
-  @include tablet{
+  @media (min-width: $tablet) {
     .text{
         font-size: 80px;
     }  
     
   }
-  @include mobile{
+  @media (min-width: $mini-tablet) {//mobile
     .text{
         font-size: 60px;
     }  

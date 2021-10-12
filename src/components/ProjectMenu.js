@@ -128,8 +128,8 @@ class ProjectMenu extends React.Component {
     }
     render(){
         return(
-            <>
-            <div className='row'>
+        
+            <div className="project-menu">
                {
                     this.state.projects.map(({id, ...otherProjectProps}) => (
                         <Project key={id} {...otherProjectProps}/>
@@ -137,7 +137,7 @@ class ProjectMenu extends React.Component {
                 }
               
             </div>
-            </>
+
            
         );
 

@@ -1,10 +1,11 @@
-@import 'colors';
-@import 'mediaQueries';
-@import 'mixins';
+@import './variables/colors';
+@import './variables/mediaQueries';
+@import './variables/mixins';
 
 .project{
- @include pageDiv;
 
+  display: flex;
+  justify-content: center;
   .card {
     @include cardContainer;
         
@@ -33,13 +34,11 @@
     }
 
     &__toolsDiv{
-      display: flex;
+      display: inline-block;
       &__description {
-      
         text-align: center;
         color: $charcoal;
         font-size: 20px;
-        padding: 10px;
       }
     }
 
@@ -74,12 +73,25 @@
 }
 
 
-@include tablet{
-  .card{
-      width: 325px;
-  }  
-
+@media (min-width: $tablet) {
+  .project{
+    .card{
+        width: 60%;
+    }  
+  }
 
 }
+
+
+@media (min-width: $small-desktop) {
+  .project{
+
+    .card{
+      width: 230px;
+  }
+  }
+
+}
+
 
 

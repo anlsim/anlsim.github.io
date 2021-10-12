@@ -1,7 +1,13 @@
-@import 'colors';
+@import './variables/colors';
+@import './variables/mediaQueries.scss';
 
 .project-menu{
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-inline: 20px;
+
+}
+@media (min-width: $tablet) {
     
 }

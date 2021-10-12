@@ -12,9 +12,8 @@ const ProjectsPage = (props) => {
            <main>
                  <NavBar/>
                 <SectionTitle title={props.title}/>
-                <div className="project-menu">
-                    <ProjectMenu/>
-                </div>
+                <ProjectMenu/>
+  
             </main>
          
     )
