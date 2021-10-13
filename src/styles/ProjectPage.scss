@@ -5,12 +5,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-inline: 20px;
 
 }
 @media (min-width: $small-desktop) {
     .project-menu{
         flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
         margin-inline: 100px;
+        justify-content: space-between;
+        gap: 40px;
     }
 }
