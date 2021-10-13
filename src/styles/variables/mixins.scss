@@ -14,7 +14,6 @@
     text-align: center;
     margin: 10px;
     border: none;
-    // width: 400px;
 }
 @mixin headerCard{
             border-color: none;
@@ -26,7 +25,7 @@
 }
 // 
 @mixin fontAwesome{
-    margin-left: 10px;
+
     padding: 10px;
     font-size: 50px;
     color: $charcoal;

@@ -3,17 +3,19 @@
 @import './variables/mixins';
 
 .project{
-
-  display: flex;
   justify-content: center;
-  .card {
-    @include cardContainer;
-        
+  border-radius: 8px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
+  background-color: $white-pas;
+  text-align: center;
+  margin: 10px;
+  border: none;  
     &__title{
       @include headerCard;
       background-color: $gray-rhythm;
-        
-    
     } 
     &__name {
       font-size: 30px;
@@ -21,46 +23,40 @@
       color: $white-pas;
       padding: 1rem 1.5rem;
     }
-
-    &__tools{
+    &__section-title{
       color: $charcoal;
       font-size: 25px;
     }
-  
-
     .fab{
       @include fontAwesome;
-
     }
-
-    &__toolsDiv{
-      display: inline-block;
-      &__description {
+    &__tools{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      &__desc{
         text-align: center;
         color: $charcoal;
         font-size: 20px;
       }
     }
-
-
     &__footer{
       clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
       background-image: url('../assets/backgroundImageYellow.jpg');
       height: 115px;
-      align-content: flex-end;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: $gray-lavander;
-
-      &__content{
-        margin-top: 25px;
-      }
-
+      gap: 20px;
       &__icon{
-        padding:10px;
+        margin-block-start: 20px;
         align-content: center;
         color: $gray-rhythm;
         font-size: 50px;
       }
-      
     }
 
     &:hover {
@@ -68,16 +64,12 @@
         color: $maize-yellow;
       }
     }
-
-  }
 }
 
 
 @media (min-width: $tablet) {
   .project{
-    .card{
         width: 60%;
-    }  
   }
 
 }
@@ -85,10 +77,7 @@
 
 @media (min-width: $small-desktop) {
   .project{
-
-    .card{
       width: 230px;
-  }
   }
 
 }
