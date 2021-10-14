@@ -129,7 +129,7 @@ class ProjectMenu extends React.Component {
     render(){
         return(
         
-            <div className="project-menu">
+            <div className='directory-menu'>
                {
                     this.state.projects.map(({id, ...otherProjectProps}) => (
                         <Project key={id} {...otherProjectProps}/>

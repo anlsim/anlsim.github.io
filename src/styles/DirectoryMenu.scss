@@ -1,7 +1,21 @@
+@import './variables/colors';
+@import './variables/mediaQueries.scss';
+
 .directory-menu{
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-inline: 20px;
+
+}
+@media (min-width: $small-desktop) {
+    .directory-menu{
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-inline: 100px;
+        justify-content: space-between;
+        gap: 40px;
+    }
 }

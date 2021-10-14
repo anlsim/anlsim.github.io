@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill from './Skill';
+import '../styles/DirectoryMenu.scss';
 
 class SkillsMenu extends React.Component {
     constructor(){
@@ -12,7 +13,7 @@ class SkillsMenu extends React.Component {
                     skillItem:[ 
                         
                         {
-                            name:'Java',
+                            name:'',
                             fAwesome: 'fab fa-java'
                         },
                         {
@@ -20,7 +21,7 @@ class SkillsMenu extends React.Component {
                             fAwesome: null
                         },
                         {
-                            name:'JavaScript',
+                            name:'',
                             fAwesome: 'fab fa-js-square'
                         },
                         {
@@ -28,11 +29,11 @@ class SkillsMenu extends React.Component {
                             fAwesome: null
                         },
                         {
-                            name:'HTML5',
+                            name:'',
                             fAwesome: 'fab fa-html5'
                         },
                         {
-                            name:'CSS3',
+                            name:'',
                             fAwesome: 'fab fa-css3-alt'
                         },
                         {
@@ -47,15 +48,15 @@ class SkillsMenu extends React.Component {
                     title: 'Frameworks',
                     skillItem:[ 
                         {
-                            name:'Bootstrap',
+                            name:'',
                             fAwesome: 'fab fa-bootstrap'
                         },
                         {
-                            name:'React',
+                            name:'',
                             fAwesome: 'fab fa-react'
                         },
                         {
-                            name:'VUE.Js',
+                            name:'',
                             fAwesome: 'fab fa-vuejs'
                         },
                         {
@@ -86,7 +87,7 @@ class SkillsMenu extends React.Component {
                             fAwesome: 'fab fa-git'
                         },
                         {
-                            name:'GitHub',
+                            name:'',
                             fAwesome: 'fab fa-github'
                         },
                         {
@@ -98,7 +99,7 @@ class SkillsMenu extends React.Component {
                             fAwesome: null
                         },   
                         {
-                            name:'Figma',
+                            name:'',
                             fAwesome: 'fab fa-figma'
                         },               
                     ]
@@ -122,7 +123,7 @@ class SkillsMenu extends React.Component {
         render(){
             return(
                 <>
-                <div className='row'>
+                <div className='directory-menu'>
                    {
                         this.state.skills.map(({id, ...SectionProps}) => (
                             <Skill key={id} {...SectionProps}/>

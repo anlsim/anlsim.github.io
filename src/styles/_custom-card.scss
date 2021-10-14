@@ -2,22 +2,22 @@
 @import './variables/mediaQueries';
 @import './variables/mixins';
 
-.project{
+.custom-card{
   @include cardContainer;  
-    &__title{
+    &__header{
       @include headerCard;
       background-color: $gray-rhythm;
     } 
-    &__name {
+    &__title{
       font-size: 30px;
       margin-top: 10px;
       color: $white-pas;
       padding: 1rem 1.5rem;
     }
     &__body{
-      padding-inline: 15px;
+      padding: 15px;
     }
-    &__section-title{
+    &__body-title{
       color: $charcoal;
       font-size: 25px;
     }
@@ -25,17 +25,18 @@
       @include fontAwesome;
     }
     &__tools{
-      display: flex;
+      display: inline-flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 20px;
-      &__desc{
+      
+    }
+    &__tools-description{
         text-align: center;
         color: $charcoal;
         font-size: 20px;
       }
-    }
     &__footer{
       clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
       background-image: url('../assets/backgroundImageYellow.jpg');
@@ -45,24 +46,22 @@
       align-items: center;
       background-color: $gray-lavander;
       gap: 20px;
-      &__icon{
+     
+    }
+    &__footer-icon{
         margin-block-start: 20px;
         align-content: center;
         color: $gray-rhythm;
         font-size: 50px;
-      }
-    }
-
-    &:hover {
-      &__icon{
-        color: $maize-yellow;
-      }
+        &:hover {
+            color: $maize-yellow;
+        }
     }
 }
 
 
 @media (min-width: $tablet) {
-  .project{
+  .custom-card{
         width: 60%;
   }
 
@@ -70,7 +69,7 @@
 
 
 @media (min-width: $small-desktop) {
-  .project{
+  .custom-card{
       width: 330px;
   }
 

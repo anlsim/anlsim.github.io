@@ -1,47 +1,53 @@
 @import './variables/colors';
 @import './variables/mixins';
 
-.skillContainer{
-    @include pageDiv;
-   
-    .card{
-        @include cardContainer;
-        &__body{
-            padding: 10px;
-        }
-        
-        &__header{
-            @include headerCard;
-            background-image: url('../assets/backgroundImageYellow.jpg');
-           
-        }
-        &__title{
-            margin-top: 15px;
-            align-items: center;
-            color: $charcoal;
-            font-size: 40px;
-
-        }
+.skill{
+    @include cardContainer;  
+    &__body{
+        padding: 10px;
     }
-
-    .skill{
-        
-        justify-content: center;
-        align-items: baseline;
-        color: $white-pas;
+    
+    &__header{
+        @include headerCard;
+        background-image: url('../assets/backgroundImageYellow.jpg');
+       
+    }
+    &__title{
+        margin-top: 15px;
+        align-items: center;
+        color: $charcoal;
         font-size: 40px;
+    }
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    &__item{
+        
+    }
+  
+
+    // .skill{
+        
+    //     justify-content: center;
+    //     align-items: baseline;
+    //     color: $white-pas;
+    //     font-size: 40px;
         
 
-        &__item{
+    //     &__item{
             
-            margin-left: 10px;
-            padding: 5px;
-            color: $charcoal;
-        } 
-        .fab{
-            @include fontAwesome;
-        }
-    }
+    //         margin-left: 10px;
+    //         padding: 5px;
+    //         color: $charcoal;
+    //     } 
+    //     .fab{
+    //         @include fontAwesome;
+    //     }
+    // }
 
     
     
