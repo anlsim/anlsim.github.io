@@ -8,6 +8,41 @@ class ProjectMenu extends React.Component {
     this.state = {
       projects: [
         {
+          title: "Travel Blog",
+          description:
+            "Built a Fullstack travel blog using React with Javascript for the front end and NodeJs with MongoDB for the backend",
+          imgUrl: "",
+          id: 1,
+          gitUrl: "https://github.com/anlsim/Travel_Web",
+          tools: [
+            {
+              name: "",
+              fAwasome: "fab fa-react",
+            },
+            {
+              name: "",
+              fAwasome: "fab fa-js-square",
+            },
+            {
+              name: "",
+              fAwasome: "fab fa-node",
+            },
+            {
+              name: "MongoDB",
+              fAwasome: "",
+            },
+            {
+              name: "",
+              fAwasome: "fab fa-sass",
+            },
+            {
+              name: "",
+              fAwasome: "fab fa-bootstrap",
+            },
+          ],
+          linkUrl: "https://warm-escarpment-05416.herokuapp.com/register",
+        },
+        {
           title: "Personal Portfolio",
           description:
             "Built a web portfolio to show projects, skills, and other relevant information",
