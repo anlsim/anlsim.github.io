@@ -22,11 +22,11 @@
         border-radius: 5px;
         color: $charcoal;
         box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
-        &--title{
+        &__title{
             color: $yellow-pas;
             font-size: 40px;
         }
-        &--description{
+        &__description{
             font-weight: lighter;
             font-size: 25px;
         }
