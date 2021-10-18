@@ -9,9 +9,7 @@ const AboutMePage = (props) => {
       <NavBar />
       <SectionTitle  title={props.title}/>  
       <div className="aboutme">
-          <div className="aboutme__img">
-            {/* <span className="img"></span> */}
-          </div>
+          <div className="aboutme__img"></div>
           <div className="aboutme__info">
             <h2 className="aboutme__info__title">Andrea Simental</h2>
             <p className="aboutme__info__description">
@@ -23,7 +21,6 @@ const AboutMePage = (props) => {
             </p>
           </div>
       </div>
-      <br/>
       <div className="container">
         <h2 className="container__title">Experience</h2>
         <div className ="container__main">
@@ -49,7 +46,7 @@ const AboutMePage = (props) => {
           </p>
         </div>
       </div>
-        <div className="container">
+      <div className="container">
           <h2 className="container__title">Education</h2>
           <div className ="container__main">
             <h3 className="container__subtitle">BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h3>
