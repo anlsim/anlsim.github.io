@@ -13,7 +13,7 @@ class ProjectMenu extends React.Component {
             "Built a Fullstack travel blog using React with Javascript for the front end and NodeJs with MongoDB for the backend",
           imgUrl: "",
           id: 1,
-          gitUrl: "https://github.com/anlsim/Travel_Web",
+          gitUrl: "https://github.com/anlsim/travel-blog",
           tools: [
             {
               name: "",
