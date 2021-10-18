@@ -32,26 +32,39 @@
         }
     }
 }
-.jumbotron{
-    background-color: $white-pas;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.education-title{
-    padding: 15px 15px;
-    background-color:$yellow-pas;
-    color: $charcoal;
-    font-size: 60px;  
-}
-.degree{
-    color: $yellow-pas;
-    font-size: 30px;
+.container{
+    margin-top: 20px;
+    &__main{
+        margin-block: 5px;
+        padding: 1.5rem;
+        background-color: $white-pas;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     &__title{
+        padding: 15px 15px;
+        background-color:$yellow-pas;
+        color: $charcoal;
+        font-size: 60px;  
+    }
+    &__subtitle{
+        color: $yellow-pas;
+        font-size: 30px;
+    }
+    &__subtitle-main{
         font-size: 25px;
         color:$gray-rhythm;
     }
-    &__address{
+    &__description{
         font-weight: lighter;
         color:$charcoal;
+        font-size: 22px;
+    }
+}
+@media (min-width: $mini-tablet) {
+    .container{
+        &__main{
+            padding: 2rem;
+        }
     }
 }
 @media (min-width: $tablet) {
@@ -60,12 +73,17 @@
         margin-inline: 40px;
         &__info{
             width: 60%;
-            &--title{
+            &__title{
                 color: $yellow-pas;
             }
-            &--description{
+            &__description{
                 font-weight: lighter;
             }
+        }
+    }
+    .container{
+        &__main{
+            padding: 3em;
         }
     }
 }

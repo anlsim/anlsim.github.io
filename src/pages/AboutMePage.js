@@ -25,18 +25,18 @@ const AboutMePage = (props) => {
       </div>
       <br/>
       <div className="container">
-        <h2 className="education-title">Experience</h2>
-        <div className ="jumbotron">
-          <h3 className="degree">Junior Developer • July  - Present</h3>
-          <p className="degree__title">D2 Creative• Full Time</p>
-          <p className="degree__address">
+        <h2 className="container__title">Experience</h2>
+        <div className ="container__main">
+          <h3 className="container__subtitle">Junior Developer • July  - Present</h3>
+          <p className="container__subtitle-main">D2 Creative• Full Time</p>
+          <p className="container__description">
             Currently developing websites on a variety of platforms.
           </p>
         </div>
-        <div className ="jumbotron">
-          <h3 className="degree">Frontend Developer • March  - July 2021</h3>
-          <p className="degree__title">Impakter • Internship</p>
-          <p className="degree__address">
+        <div className ="container__main">
+          <h3 className="container__subtitle">Frontend Developer • March  - July 2021</h3>
+          <p className="container__subtitle-main">Impakter • Internship</p>
+          <p className="container__description">
               Design and develop the frontend of the
               Certificate application while utilizing reusable code
               with Vue.js and Bootstrap. to complete projects in the future.
@@ -49,22 +49,22 @@ const AboutMePage = (props) => {
           </p>
         </div>
       </div>
-        <div className="container pt-5">
-          <h2 className="education-title">Education</h2>
-          <div className ="jumbotron">
-            <h3 className="degree">BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h3>
-            <p className="degree__title">Computing and Software Development • GPA: 3.71</p>
-            <p className="degree__address">Lake Washington Institute of Technology • Seattle, WA</p>
+        <div className="container">
+          <h2 className="container__title">Education</h2>
+          <div className ="container__main">
+            <h3 className="container__subtitle">BACHELOR’S OF APPLIED SCIENCE DEGREE • 2019 - 2021</h3>
+            <p className="container__subtitle-main">Computing and Software Development • GPA: 3.71</p>
+            <p className="container__description">Lake Washington Institute of Technology • Seattle, WA</p>
           </div>
-          <div className ="jumbotron">
-            <h3 className="degree">ASSOCIATE’S OF APPLIED SCIENCE • 2017 - 2019</h3>
-            <p className="degree__title">Computing and Software Development • GPA: 3.68</p>
-            <p className="degree__address">Lake Washington Institute of Technology • Seattle, WA</p>
+          <div className ="container__main">
+            <h3 className="container__subtitle">ASSOCIATE’S OF APPLIED SCIENCE • 2017 - 2019</h3>
+            <p className="container__subtitle-main">Computing and Software Development • GPA: 3.68</p>
+            <p className="container__description">Lake Washington Institute of Technology • Seattle, WA</p>
           </div>
-          <div className ="jumbotron">
-            <h3 className="degree">BACHELOR’S DEGREE • 2007 - 2011</h3>
-            <p className="degree__title">Graphic Design • GPA: 3.80</p>
-            <p className="degree__address">Universidad de Guadalajara - CUAAD • Guadalajara, MX</p>
+          <div className ="container__main">
+            <h3 className="container__subtitle">BACHELOR’S DEGREE • 2007 - 2011</h3>
+            <p className="container__subtitle-main">Graphic Design • GPA: 3.80</p>
+            <p className="container__description">Universidad de Guadalajara - CUAAD • Guadalajara, MX</p>
           </div>
         </div>
       </>
