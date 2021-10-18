@@ -39,9 +39,7 @@ const HomePage = () => {
                 <h1 className="homepage__header--title"> Hi, I'm Andrea</h1>
                 <p className="homepage__header--subtitle">I'm a Sofware Developer that believes in building things for enviromental, social and economic good.</p>
             </div>
-            <div>
                 <DirectoryMenu/>
-            </div> 
         </div>
         
        

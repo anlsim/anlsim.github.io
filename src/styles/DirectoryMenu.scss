@@ -19,3 +19,12 @@
         gap: 40px;
     }
 }
+@media (min-width: $desktop) {
+    .directory-menu{
+        align-items: flex;
+        flex-wrap: none;
+        margin-inline: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+}
