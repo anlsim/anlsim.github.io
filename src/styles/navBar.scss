@@ -4,7 +4,7 @@
 .navBar {
   display: flex;
   align-items: center;
- color: $charcoal;
+  color: $charcoal;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background: white;
   position: relative;
@@ -52,7 +52,7 @@
     }
   }
 }
-@media (min-width:  $big-tablet) {
+@media (min-width: $big-tablet) {
   .navBar {
     height: 70px;
     &__icon {

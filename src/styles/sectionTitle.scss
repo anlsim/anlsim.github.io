@@ -2,42 +2,41 @@
 @import './variables/mediaQueries';
 
 .hero {
-    position: relative;
-    min-height: 150px;
-    display: flex;
-    &__background{
-      position: absolute;
-      background-color: $maize-yellow;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-    } 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -10%;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background-color: $charcoal;
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
-    }
-    &__text{
-        font-size: 60px;
-        color: $white-pas;
-        padding: 25px;
-    }
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  &__background {
+    position: absolute;
+    background-color: $maize-yellow;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: $charcoal;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+  }
+  &__text {
+    font-size: 60px;
+    color: $white-pas;
+    padding: 25px;
+  }
 }
 
-  @media (min-width: $mini-tablet) {
-    .hero {
-      &__text{
-        padding: 10px 25px;
-        font-size: 80px;
-      }  
-    } 
+@media (min-width: $mini-tablet) {
+  .hero {
+    &__text {
+      padding: 10px 25px;
+      font-size: 80px;
+    }
   }
-
+}

@@ -2,78 +2,69 @@
 @import './variables/mediaQueries';
 @import './variables/mixins';
 
-.custom-card{
-  @include cardContainer;  
-    &__header{
-      @include headerCard;
-      background-color: $gray-rhythm;
-    } 
-    &__title{
-      font-size: 30px;
-      margin-top: 10px;
-      color: $white-pas;
-      padding: 1rem 1.5rem;
+.custom-card {
+  @include cardContainer;
+  &__header {
+    @include headerCard;
+    background-color: $gray-rhythm;
+  }
+  &__title {
+    font-size: 30px;
+    margin-top: 10px;
+    color: $white-pas;
+    padding: 1rem 1.5rem;
+  }
+  &__body {
+    padding: 15px;
+  }
+  &__body-title {
+    color: $charcoal;
+    font-size: 25px;
+  }
+  .fab {
+    @include fontAwesome;
+  }
+  &__tools {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__tools-description {
+    text-align: center;
+    color: $charcoal;
+    font-size: 20px;
+  }
+  &__footer {
+    clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
+    background-image: url('../assets/backgroundImageYellow.jpg');
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-lavander;
+    gap: 20px;
+  }
+  &__footer-icon {
+    margin-block-start: 20px;
+    align-content: center;
+    color: $gray-rhythm;
+    font-size: 50px;
+    &:hover {
+      color: $maize-yellow;
     }
-    &__body{
-      padding: 15px;
-    }
-    &__body-title{
-      color: $charcoal;
-      font-size: 25px;
-    }
-    .fab{
-      @include fontAwesome;
-    }
-    &__tools{
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      
-    }
-    &__tools-description{
-        text-align: center;
-        color: $charcoal;
-        font-size: 20px;
-      }
-    &__footer{
-      clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0% 100%);
-      background-image: url('../assets/backgroundImageYellow.jpg');
-      height: 115px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $gray-lavander;
-      gap: 20px;
-     
-    }
-    &__footer-icon{
-        margin-block-start: 20px;
-        align-content: center;
-        color: $gray-rhythm;
-        font-size: 50px;
-        &:hover {
-            color: $maize-yellow;
-        }
-    }
+  }
 }
-
 
 @media (min-width: $tablet) {
-  .custom-card{
-        width: 60%;
+  .custom-card {
+    width: 60%;
   }
-
 }
-
 
 @media (min-width: $small-desktop) {
-  .custom-card{
-      width: 330px;
+  .custom-card {
+    width: 330px;
   }
-
 }
-
-
-

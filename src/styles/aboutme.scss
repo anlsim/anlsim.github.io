@@ -1,94 +1,94 @@
 @import './variables/colors';
 @import './variables/mediaQueries';
-.aboutme{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-block: 15px;
-    gap: 15px;
-    &__img{
-        background-image: url(../assets/profilePic.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 290px;
-        height: 290px;
-        border-radius: 50%;
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 15px;
+  gap: 15px;
+  &__img {
+    background-image: url(../assets/profilePic.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+  }
+  &__info {
+    text-align: center;
+    padding: 20px;
+    background-color: $white-pas;
+    border-radius: 5px;
+    color: $charcoal;
+    box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
+    &__title {
+      color: $yellow-pas;
+      font-size: 40px;
     }
-    &__info{
-        text-align: center;
-        padding: 20px;
-        background-color: $white-pas;
-        border-radius: 5px;
-        color: $charcoal;
-        box-shadow: 0 4px 8px 0 rgba($charcoal, 0.2);
-        &__title{
-            color: $yellow-pas;
-            font-size: 40px;
-        }
-        &__description{
-            font-weight: lighter;
-            font-size: 25px;
-        }
+    &__description {
+      font-weight: lighter;
+      font-size: 25px;
     }
+  }
 }
-.container{
-    margin-top: 20px;
-    &__main{
-        margin-block: 5px;
-        padding: 1.5rem;
-        background-color: $white-pas;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    &__title{
-        padding: 15px 15px;
-        background-color:$yellow-pas;
-        color: $charcoal;
-        font-size: 60px;  
-    }
-    &__subtitle{
-        color: $yellow-pas;
-        font-size: 30px;
-    }
-    &__subtitle-main{
-        font-size: 25px;
-        color:$gray-rhythm;
-    }
-    &__description{
-        font-weight: lighter;
-        color:$charcoal;
-        font-size: 22px;
-    }
+.container {
+  margin-top: 20px;
+  &__main {
+    margin-block: 5px;
+    padding: 1.5rem;
+    background-color: $white-pas;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__title {
+    padding: 15px 15px;
+    background-color: $yellow-pas;
+    color: $charcoal;
+    font-size: 60px;
+  }
+  &__subtitle {
+    color: $yellow-pas;
+    font-size: 30px;
+  }
+  &__subtitle-main {
+    font-size: 25px;
+    color: $gray-rhythm;
+  }
+  &__description {
+    font-weight: lighter;
+    color: $charcoal;
+    font-size: 22px;
+  }
 }
 @media (min-width: $mini-tablet) {
-    .container{
-        &__main{
-            padding: 2rem;
-        }
+  .container {
+    &__main {
+      padding: 2rem;
     }
+  }
 }
 @media (min-width: $tablet) {
-    .aboutme{
-        flex-direction: row;
-        //margin-inline: 40px;
-        &__info{
-            width: 60%;
-            &__title{
-                color: $yellow-pas;
-            }
-            &__description{
-                font-weight: lighter;
-            }
-        }
+  .aboutme {
+    flex-direction: row;
+    //margin-inline: 40px;
+    &__info {
+      width: 60%;
+      &__title {
+        color: $yellow-pas;
+      }
+      &__description {
+        font-weight: lighter;
+      }
     }
-    .container{
-        &__main{
-            padding: 3em;
-        }
+  }
+  .container {
+    &__main {
+      padding: 3em;
     }
+  }
 }
 @media (min-width: $small-desktop) {
-    .aboutme{
-        gap: 45px;
-    }
+  .aboutme {
+    gap: 45px;
+  }
 }

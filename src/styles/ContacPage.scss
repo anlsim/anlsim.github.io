@@ -1,25 +1,22 @@
 @import './variables/colors';
 
-.contact{
-    display: flex;
-    column-gap: 100px;
-    justify-content: center;
-    margin-top: 100px;
-    &__icon{
-        transition: all .2s ease-in-out; 
-        &:hover{
-            transform: scale(1.1);  
-            a {
-                color: $gray-rhythm;
-            }
-        }
-    
-        &-color{
-            font-size: 150px;
-            color: $yellow-pas;
-        }
-    
+.contact {
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  margin-top: 100px;
+  &__icon {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      a {
+        color: $gray-rhythm;
+      }
     }
-    
-}
 
+    &-color {
+      font-size: 150px;
+      color: $yellow-pas;
+    }
+  }
+}

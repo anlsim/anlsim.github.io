@@ -1,63 +1,57 @@
 @import './variables/colors.scss';
 @import './variables/mediaQueries';
-    .homepage{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 80px;
-        &__particles{
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-        &__header{
-            position: relative;
-            width: 375px;
-            padding: 50px 50px;
-            margin: 50px 50px;
-            align-items: center;
-            width: 375px;
-            &--title{
-                align-items: center;
-                font-size: 45px;
-            }
-            &--subtitle{
-                font-weight: lighter;
-                align-items: center;
-                font-size: 25px;
-            }   
-        }
-
+.homepage {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+  &__particles {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  &__header {
+    position: relative;
+    width: 375px;
+    padding: 50px;
+    align-items: center;
+    width: 375px;
+    &--title {
+      align-items: center;
+      font-size: 45px;
     }
-    @media (min-width: $mini-tablet) {
-        .homepage{
-            &__header{
-                width: 500px;
-                margin: 50px 50px;
-                padding: 50px 50px;
-
-                &--title{
-                    font-size: 65px;
-                }
-                &--subtitle{
-                    font-size: 30px;
-                }
-            } 
-        }
+    &--subtitle {
+      font-weight: lighter;
+      align-items: center;
+      font-size: 25px;
     }
-    @media (min-width: $small-desktop) {
-         .homepage{
-            padding: 20px 80px;
-            &__header{
-                width: 700px; 
-                &--title{
-                    font-size: 100px;
-                }
-                &--subtitle{
-                    font-size: 40px;
-                }
-            }
-         }
+  }
+}
+@media (min-width: $mini-tablet) {
+  .homepage {
+    &__header {
+      width: 500px;
+      &--title {
+        font-size: 65px;
+      }
+      &--subtitle {
+        font-size: 30px;
+      }
     }
-
+  }
+}
+@media (min-width: $small-desktop) {
+  .homepage {
+    padding: 20px 80px;
+    &__header {
+      width: 700px;
+      &--title {
+        font-size: 100px;
+      }
+      &--subtitle {
+        font-size: 40px;
+      }
+    }
+  }
+}
