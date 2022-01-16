@@ -1,11 +1,51 @@
-import React from "react"
+import { useState } from 'react'
 import { Link } from "react-router-dom"
-
-import "../styles/custom.scss"
+import "../styles/navBar.scss";
+// import "../styles/custom.scss"
 const NavBar = () => {
+  const [clicked, setClicked] = useState(false)
+  const handleClicked = () => {
+    setClicked(!clicked)
+  }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+       <nav className='navBar'>
+          <Link className='navBar__logo' to='/'>
+          Andrea Simental 
+          </Link>
+          <div
+            className='navBar__icon'
+            onClick={handleClicked}>
+            <i
+              className={
+                clicked ? 'fas fa-times' : 'fas fa-bars'
+              }></i>
+          </div>
+          <ul className='navBar__menu'>
+          <li className="navBar__menu__links">
+                <Link to="/About">
+                  About Me
+                </Link>
+              </li>
+              <li className="navBar__menu__links">
+                <Link to="/projects">
+                  Projects
+                </Link>
+              </li>
+              <li className="navBar__menu__links">
+                <Link to="/Skills">
+                  Skills
+                </Link>
+              </li>
+
+              <li className="navBar__menu__links">
+                <Link to="/contact">
+                  Contact
+                </Link>
+              </li> 
+          </ul>
+        </nav>
+      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Andrea Simental
@@ -47,7 +87,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   )
 }
