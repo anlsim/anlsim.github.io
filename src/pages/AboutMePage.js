@@ -24,11 +24,12 @@ const AboutMePage = (props) => {
         <h2 className="container__title">Experience</h2>
         <div className="container__main">
           <h3 className="container__subtitle">
-            Junior Developer • July - Present
+            Junior Developer • July 2021 - Present
           </h3>
           <p className="container__subtitle-main">D2 Creative• Full Time</p>
           <p className="container__description">
-            Currently developing websites on a variety of platforms.
+            Currently developing websites on a variety of platforms, using multiple frameworks and programing languages.
+            <br />
           </p>
         </div>
         <div className="container__main">
@@ -37,13 +38,13 @@ const AboutMePage = (props) => {
           </h3>
           <p className="container__subtitle-main">Impakter • Internship</p>
           <p className="container__description">
-            Design and develop the frontend of the Certificate application while
+            Design and develop the frontend of the Certificates Tool application while
             utilizing reusable code with Vue.js and Bootstrap. to complete
             projects in the future. Designed UI wireframes using Figma.
             Developed Frontend with Vue.js and Bootstrap.
             <br />
             <br />
-            • Designed and developed UI wireframes using Figma.
+            • Designed UI wireframes using Figma.
             <br />
             • Created UI of the certificate tool to detect environmental or
             social impact for companies.
