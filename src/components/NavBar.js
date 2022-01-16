@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom"
+import SideBar from './SideBar';
 import "../styles/navBar.scss";
 // import "../styles/custom.scss"
 const NavBar = () => {
@@ -21,8 +22,11 @@ const NavBar = () => {
                 clicked ? 'fas fa-times' : 'fas fa-bars'
               }></i>
           </div>
+          <SideBar
+          clicked={clicked}
+          handleClicked={handleClicked}></SideBar>
           <ul className='navBar__menu'>
-          <li className="navBar__menu__links">
+            <li className="navBar__menu__links">
                 <Link to="/About">
                   About Me
                 </Link>

@@ -52,14 +52,14 @@
     }
   }
 }
-@media (min-width: $tablet) {
+@media (min-width:  $big-tablet) {
   .navBar {
     height: 70px;
     &__icon {
       display: none;
     }
     &__logo {
-      width: 250px;
+      width: 300px;
       font-size: 26px;
     }
     &__menu {
@@ -93,7 +93,7 @@
     }
   }
 }
-@media (min-width: $small-desktop) {
+@media (min-width: desktop) {
   .navBar {
     &__settings {
       margin-inline-start: 170px;

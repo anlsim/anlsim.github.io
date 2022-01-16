@@ -1,0 +1,73 @@
+@import './variables/colors.scss';
+@import './variables/mediaQueries';
+
+.sideBar {
+  &__logo {
+    justify-self: start;
+    color: $charcoal;
+    cursor: pointer;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 25%);
+    color: $yellow-pas;
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+  &__menu {
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 15px;
+    top: 45px;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+  &__links {
+    color: $charcoal;
+    padding: 0.5rem 1rem;
+  }
+
+  &__menu.active {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: $charcoal;
+      &:hover {
+        color: $yellow-pas;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+    }
+    background-color: white;
+    left: 0;
+    opacity: 1;
+    height: auto;
+    transition: all 0.5s ease;
+    z-index: 1000;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: left;
+
+    &__links {
+      display: table;
+      text-align: left;
+      padding: 2rem;
+      width: 100%;
+    }
+  }
+}

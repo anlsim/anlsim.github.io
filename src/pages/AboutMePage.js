@@ -8,6 +8,7 @@ const AboutMePage = (props) => {
     <>
       <NavBar />
       <SectionTitle title={props.title} />
+      <div className="container">
       <div className="aboutme">
         <div className="aboutme__img"></div>
         <div className="aboutme__info">
@@ -20,7 +21,6 @@ const AboutMePage = (props) => {
           </p>
         </div>
       </div>
-      <div className="container">
         <h2 className="container__title">Experience</h2>
         <div className="container__main">
           <h3 className="container__subtitle">

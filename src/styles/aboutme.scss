@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    margin-block: 15px;
     gap: 15px;
     &__img{
         background-image: url(../assets/profilePic.jpg);
@@ -70,7 +70,7 @@
 @media (min-width: $tablet) {
     .aboutme{
         flex-direction: row;
-        margin-inline: 40px;
+        //margin-inline: 40px;
         &__info{
             width: 60%;
             &__title{
@@ -87,8 +87,8 @@
         }
     }
 }
-@media (min-width: $desktop) {
+@media (min-width: $small-desktop) {
     .aboutme{
-        margin-inline: 250px;
+        gap: 45px;
     }
 }
