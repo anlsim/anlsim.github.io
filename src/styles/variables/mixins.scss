@@ -7,9 +7,7 @@
 // Card styles ///
 @mixin cardContainer{
     justify-content: center;
-    border-radius: 8px;
     position: relative;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba($charcoal, 0.3);
     background-color: $white-pas;
