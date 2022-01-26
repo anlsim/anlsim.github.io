@@ -16,7 +16,7 @@ const ContactPage = (props) => {
 
       <SectionTitle title={props.title} />
       <div className="contact">
-        <h2 className="contact__icon">
+        <div className="contact__icon">
           <a
             className="contact__icon-color"
             href="https://github.com/anlsim"
@@ -24,9 +24,9 @@ const ContactPage = (props) => {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-        </h2>
+        </div>
 
-        <h2 className="contact__icon">
+        <div className="contact__icon">
           <a
             className="contact__icon-color"
             href="https://www.linkedin.com/in/andrea-simental/"
@@ -34,7 +34,7 @@ const ContactPage = (props) => {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-        </h2>
+        </div>
       </div>
     </>
   )
