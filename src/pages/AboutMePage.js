@@ -29,7 +29,6 @@ const AboutMePage = (props) => {
           <p className="container__subtitle-main">D2 Creative• Full Time</p>
           <p className="container__description">
             Currently developing websites on a variety of platforms, using multiple frameworks and programing languages.
-            <br />
           </p>
         </div>
         <div className="container__main">
