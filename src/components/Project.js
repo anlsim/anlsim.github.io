@@ -26,7 +26,7 @@ const Project = ({
         {tools.map((t, index) => {
           return (
             <>
-              <p className='custom-card__tools-description'>
+              <p className='custom-card__tools-description' key={index}>
                 {t.name}{' '}
               </p>
               <i className={t.fAwasome} />

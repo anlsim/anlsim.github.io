@@ -38,7 +38,6 @@ const HomePage = () => {
       />
       <div className='homepage__header'>
         <h1 className='homepage__header--title'>
-          {' '}
           Hi, I'm Andrea
         </h1>
         <p className='homepage__header--subtitle'>
