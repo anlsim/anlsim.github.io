@@ -9,7 +9,7 @@ const HomePage = () => {
       <Particles
         className='homepage__particles'
         options={{
-          fpsLimit: 60,
+          fpsLimit: 30,
           fullScreen: {
             enable: true,
             zIndex: -1,
@@ -37,7 +37,7 @@ const HomePage = () => {
               straight: false,
             },
             number: {
-              value: 50,
+              value: 30,
               density: {
                 enable: true,
                 value_area: 1000,
@@ -47,10 +47,10 @@ const HomePage = () => {
               value: 1,
             },
             shape: {
-              type: 'circle',
+              type: 'polygon',
             },
             size: {
-              value: 4,
+              value: 3,
             },
           },
           detectRetina: true,
