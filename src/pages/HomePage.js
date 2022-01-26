@@ -1,40 +1,75 @@
 import React from 'react'
 import '../styles/HomePage.scss'
 import DirectoryMenu from '../components/DirectoryMenu'
-import Particles from 'react-particles-js'
+import Particles from "react-tsparticles";
 
 const HomePage = () => {
   return (
     <div className='homepage'>
       <Particles
         className='homepage__particles'
-        params={{
+        
+        options={{
+          fpsLimit: 60,
+          fullScreen: {
+            enable: true,
+            zIndex: -1
+          },
+          detectRetina: true,
           particles: {
-            number: {
-              value: 60,
-              density: {
-                enable: true,
-                value_area: 900,
-              },
-            },
             color: {
-              value: '#30323D',
-            },
-            size: {
-              value: 5,
-              random: true,
-              anim: {
+              value: "#BCBCC8",
+              animation: {
                 enable: true,
-                speed: 10,
-              },
+                speed: 60
+              }
             },
-            line_linked: {
+            links: {
+              enable: true,
               color: {
                 value: '#E8C547',
               },
             },
+            move: {
+              direction: "bottom",
+              enable: true,
+              random: false,
+              speed: 1,
+              straight: false,
+           
+            },
+            number: {
+              value: 50,
+              density: {
+                enable: true,
+                value_area: 1000,
+              },
+            },
+            opacity: {
+              value: 1
+            },
+            shape: {
+              type: "circle"
+            },
+            size: {
+              value: 4
+            }
           },
+   
+          detectRetina: true,
+          emitters: {
+            direction: "none",
+            rate: {
+              quantity: 1,
+              delay: 1
+            },
+            position: {
+              x: 50,
+              y: 50
+            }
+          }
         }}
+      
       />
       <div className='homepage__header'>
         <h1 className='homepage__header--title'>

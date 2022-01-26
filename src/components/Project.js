@@ -27,7 +27,7 @@ const Project = ({
           return (
             <>
               <p className='custom-card__tools-description' key={index}>
-                {t.name}{' '}
+                {t.name}
               </p>
               <i className={t.fAwasome} />
             </>
