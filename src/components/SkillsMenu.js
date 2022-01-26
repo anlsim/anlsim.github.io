@@ -1,6 +1,6 @@
-import React from "react"
-import Skill from "./Skill"
-import "../styles/DirectoryMenu.scss"
+import React from 'react'
+import Skill from './Skill'
+import '../styles/DirectoryMenu.scss'
 
 class SkillsMenu extends React.Component {
   constructor() {
@@ -9,107 +9,107 @@ class SkillsMenu extends React.Component {
       skills: [
         {
           id: 1,
-          title: "Languages",
+          title: 'Languages',
           skillItem: [
             {
-              name: "",
-              fAwesome: "fab fa-java",
+              name: '',
+              fAwesome: 'fab fa-java',
             },
             {
-              name: "C#",
+              name: 'C#',
               fAwesome: null,
             },
             {
-              name: "",
-              fAwesome: "fab fa-js-square",
+              name: '',
+              fAwesome: 'fab fa-js-square',
             },
             {
-              name: "SQL",
+              name: 'SQL',
               fAwesome: null,
             },
             {
-              name: "",
-              fAwesome: "fab fa-html5",
+              name: '',
+              fAwesome: 'fab fa-html5',
             },
             {
-              name: "",
-              fAwesome: "fab fa-css3-alt",
+              name: '',
+              fAwesome: 'fab fa-css3-alt',
             },
             {
-              name: "",
-              fAwesome: "fab fa-sass",
+              name: '',
+              fAwesome: 'fab fa-sass',
             },
           ],
         },
         {
           id: 2,
-          title: "Frameworks",
+          title: 'Frameworks',
           skillItem: [
             {
-              name: "",
-              fAwesome: "fab fa-bootstrap",
+              name: '',
+              fAwesome: 'fab fa-bootstrap',
             },
             {
-              name: "",
-              fAwesome: "fab fa-react",
+              name: '',
+              fAwesome: 'fab fa-react',
             },
             {
-              name: "",
-              fAwesome: "fab fa-vuejs",
+              name: '',
+              fAwesome: 'fab fa-vuejs',
             },
             {
-              name: "",
-              fAwesome: "fab fa-node",
+              name: '',
+              fAwesome: 'fab fa-node',
             },
             {
-              name: "ASP.NET",
+              name: 'ASP.NET',
               fAwesome: null,
             },
           ],
         },
         {
           id: 3,
-          title: "Other",
+          title: 'Other',
           skillItem: [
             {
-              name: "OPP",
+              name: 'OPP',
               fAwesome: null,
             },
             {
-              name: "MVC",
+              name: 'MVC',
               fAwesome: null,
             },
             {
-              name: "",
-              fAwesome: "fab fa-git",
+              name: '',
+              fAwesome: 'fab fa-git',
             },
             {
-              name: "",
-              fAwesome: "fab fa-github",
+              name: '',
+              fAwesome: 'fab fa-github',
             },
             {
-              name: "",
-              fAwesome: "fab fa-aws",
+              name: '',
+              fAwesome: 'fab fa-aws',
             },
             {
-              name: "Azure",
+              name: 'Azure',
               fAwesome: null,
             },
             {
-              name: "",
-              fAwesome: "fab fa-figma",
+              name: '',
+              fAwesome: 'fab fa-figma',
             },
           ],
         },
         {
           id: 4,
-          title: "Adobe",
+          title: 'Adobe',
           skillItem: [
-            { name: "Photoshop" },
-            { name: "Illustrator" },
-            { name: "Lightroom" },
-            { name: "InDesign" },
-            { name: "Xd" },
+            { name: 'Photoshop' },
+            { name: 'Illustrator' },
+            { name: 'Lightroom' },
+            { name: 'InDesign' },
+            { name: 'Xd' },
           ],
         },
       ],
@@ -118,10 +118,12 @@ class SkillsMenu extends React.Component {
   render() {
     return (
       <>
-        <div className="directory-menu">
-          {this.state.skills.map(({ id, ...SectionProps }) => (
-            <Skill key={id} {...SectionProps} />
-          ))}
+        <div className='directory-menu'>
+          {this.state.skills.map(
+            ({ id, ...SectionProps }) => (
+              <Skill key={id} {...SectionProps} />
+            )
+          )}
         </div>
       </>
     )

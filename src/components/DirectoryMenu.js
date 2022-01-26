@@ -1,6 +1,6 @@
-import React, { Component } from "react"
-import "../styles/DirectoryMenu.scss"
-import MenuItem from "../components/MenuItem"
+import React, { Component } from 'react'
+import '../styles/DirectoryMenu.scss'
+import MenuItem from '../components/MenuItem'
 
 class DirectoryMenu extends Component {
   constructor() {
@@ -8,34 +8,36 @@ class DirectoryMenu extends Component {
     this.state = {
       sections: [
         {
-          title: "About Me",
+          title: 'About Me',
           id: 1,
-          linkUrl: "about",
+          linkUrl: 'about',
         },
         {
-          title: "Projects",
+          title: 'Projects',
           id: 2,
-          linkUrl: "projects",
+          linkUrl: 'projects',
         },
         {
-          title: "Skills",
+          title: 'Skills',
           id: 3,
-          linkUrl: "skills",
+          linkUrl: 'skills',
         },
         {
-          title: "Contact",
+          title: 'Contact',
           id: 4,
-          linkUrl: "contact",
+          linkUrl: 'contact',
         },
       ],
     }
   }
   render() {
     return (
-      <div className="directory-menu">
-        {this.state.sections.map(({ id, ...SectionProps }) => (
-          <MenuItem key={id} {...SectionProps} />
-        ))}
+      <div className='directory-menu'>
+        {this.state.sections.map(
+          ({ id, ...SectionProps }) => (
+            <MenuItem key={id} {...SectionProps} />
+          )
+        )}
       </div>
     )
   }
