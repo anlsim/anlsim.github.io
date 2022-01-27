@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from './Project'
 import '../../styles/DirectoryMenu.scss'
+import {projects} from './ProjectsData'
 
 class ProjectMenu extends React.Component {
   constructor() {
@@ -161,7 +162,7 @@ class ProjectMenu extends React.Component {
   render() {
     return (
       <div className='directory-menu'>
-        {this.state.projects.map(
+        {projects.map(
           ({ id, ...otherProjectProps }) => (
             <Project key={id} {...otherProjectProps} />
           )
