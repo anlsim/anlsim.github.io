@@ -6,7 +6,7 @@ import {
   Switch,
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import HomePage from './pages/HomePage'
+import HomePage from './pages/Home/HomePage'
 import ProjectsPage from './pages/ProjectsPage'
 import ContactPage from './pages/ContactPage'
 import SkillsPage from './pages/SkillsPage'

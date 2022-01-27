@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import '../../styles/DirectoryMenu.scss'
 import MenuItem from './MenuItem'
-
 class DirectoryMenu extends Component {
   constructor() {
     super()
@@ -35,7 +34,17 @@ class DirectoryMenu extends Component {
       <div className='directory-menu'>
         {this.state.sections.map(
           ({ id, ...SectionProps }) => (
-            <MenuItem key={id} {...SectionProps} />
+            <div
+            className='pentagon'
+            onClick={() =>
+              history.push(`${match.url}${linkUrl}`)
+            }>
+            <div className='pentagon__content'>
+              <h1 className='pentagon__title'>
+                {title.toUpperCase()}
+              </h1>
+            </div>
+          </div>
           )
         )}
       </div>
