@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/HomePage.scss'
-import DirectoryMenu from '../components/DirectoryMenu'
+import DirectoryMenu from '../components/Menu/DirectoryMenu'
 import Particles from 'react-tsparticles'
 
 const HomePage = () => {

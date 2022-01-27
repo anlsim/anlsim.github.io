@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle'
-import NavBar from '../components/NavBar'
+import NavBar from  '../components/Navigation/NavBar'
 import '../styles/Aboutme.scss'
 
 const AboutMePage = (props) => {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/SideBar.scss'
+import '../../styles/SideBar.scss'
 
 export default function SideBar({
   clicked,

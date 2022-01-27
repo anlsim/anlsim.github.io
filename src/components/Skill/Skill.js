@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import '../styles/_custom-card.scss'
+import '../../styles/_custom-card.scss'
 
 const Skill = (props) => (
   <div className='custom-card'>

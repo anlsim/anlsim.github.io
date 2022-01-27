@@ -1,9 +1,8 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import '../styles/MenuItem.scss'
+import '../../styles/MenuItem.scss'
 
 const MenuItem = ({ title, history, linkUrl, match }) => (
-  <>
     <div
       className='pentagon'
       onClick={() =>
@@ -15,7 +14,6 @@ const MenuItem = ({ title, history, linkUrl, match }) => (
         </h1>
       </div>
     </div>
-  </>
 )
 
 export default withRouter(MenuItem)

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SideBar from './SideBar'
-import '../styles/navBar.scss'
+import '../../styles/navBar.scss'
 // import "../styles/custom.scss"
 const NavBar = () => {
   const [clicked, setClicked] = useState(false)

@@ -1,6 +1,6 @@
 import React from 'react'
 import Skill from './Skill'
-import '../styles/DirectoryMenu.scss'
+import '../../styles/DirectoryMenu.scss'
 
 class SkillsMenu extends React.Component {
   constructor() {

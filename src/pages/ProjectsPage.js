@@ -1,6 +1,6 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
-import ProjectMenu from '../components/ProjectMenu'
+import NavBar from '../components/Navigation/NavBar'
+import ProjectMenu from '../components/Project/ProjectMenu'
 import SectionTitle from '../components/SectionTitle'
 import '../styles/ProjectPage.scss'
 

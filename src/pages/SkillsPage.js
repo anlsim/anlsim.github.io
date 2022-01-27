@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle'
-import NavBar from '../components/NavBar'
-import SkillsMenu from '../components/SkillsMenu'
+import NavBar from '../components/Navigation/NavBar'
+import SkillsMenu from '../components/Skill/SkillsMenu'
 
 const SkillsPage = (props) => {
   return (

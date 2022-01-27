@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from './Project'
-import '../styles/DirectoryMenu.scss'
+import '../../styles/DirectoryMenu.scss'
 
 class ProjectMenu extends React.Component {
   constructor() {

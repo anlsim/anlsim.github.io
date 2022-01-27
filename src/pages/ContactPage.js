@@ -6,7 +6,7 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import SectionTitle from '../components/SectionTitle'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/Navigation/NavBar'
 import '../styles/ContacPage.scss'
 
 const ContactPage = (props) => {
