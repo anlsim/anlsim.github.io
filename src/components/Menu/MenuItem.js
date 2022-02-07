@@ -9,9 +9,9 @@ const MenuItem = ({ title, history, linkUrl, match }) => (
         history.push(`${match.url}${linkUrl}`)
       }>
       <div className='pentagon__content'>
-        <h1 className='pentagon__title'>
+        <h2 className='pentagon__title'>
           {title.toUpperCase()}
-        </h1>
+        </h2>
       </div>
     </div>
 )
