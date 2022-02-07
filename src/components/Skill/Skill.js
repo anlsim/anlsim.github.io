@@ -5,7 +5,7 @@ import '../../styles/_custom-card.scss'
 const Skill = (props) => (
   <div className='custom-card'>
     <div className='custom-card__header'>
-      <h1 className='custom-card__title'>{props.title}</h1>
+      <h2 className='custom-card__title'>{props.title}</h2>
     </div>
     <div className='custom-card__body'>
       {props.skillItem.map((item, key) => {
