@@ -44,15 +44,16 @@
     justify-content: center;
     align-items: center;
     background-color: $gray-lavander;
-    gap: 20px;
+    gap: 50px;
   }
   &__footer-icon {
     margin-block-start: 20px;
     align-content: center;
     color: $gray-rhythm;
     font-size: 50px;
+    padding: 5px;
     &:hover {
-      color: $maize-yellow;
+      color: $charcoal;
     }
   }
 }
