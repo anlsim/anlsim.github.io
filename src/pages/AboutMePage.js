@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle'
 import NavBar from  '../components/Navigation/NavBar'
-import '../styles/Aboutme.scss'
+import '../styles/about-me.scss'
 
 const AboutMePage = (props) => {
   return (
@@ -9,13 +9,13 @@ const AboutMePage = (props) => {
       <NavBar />
       <SectionTitle title={props.title} />
       <div className='container'>
-        <div className='aboutme'>
-          <div className='aboutme__img'></div>
-          <div className='aboutme__info'>
-            <h2 className='aboutme__info__title'>
+        <div className='about-me'>
+          <div className='about-me__img'></div>
+          <div className='about-me__info'>
+            <h2 className='about-me__info__title'>
               Andrea Simental
             </h2>
-            <p className='aboutme__info__description'>
+            <p className='about-me__info__description'>
               Collaborative and creative Software Developer
               with a keen interest in building responsive
               and scalable web apps to enhance user
