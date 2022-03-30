@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
+import Hero from '../components/Hero'
 import NavBar from '../components/Navigation/NavBar'
 import SkillsMenu from '../components/Skill/SkillsMenu'
 
@@ -7,7 +7,7 @@ const SkillsPage = (props) => {
   return (
     <main>
       <NavBar />
-      <SectionTitle title={props.title} />
+      <Hero title={props.title} />
       <SkillsMenu />
     </main>
   )

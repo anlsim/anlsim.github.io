@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import SectionTitle from '../components/SectionTitle'
+import Hero from '../components/Hero'
 import NavBar from '../components/Navigation/NavBar'
 import '../styles/ContacPage.scss'
 
@@ -14,7 +14,7 @@ const ContactPage = (props) => {
     <>
       <NavBar />
 
-      <SectionTitle title={props.title} />
+      <Hero title={props.title} />
       <div className='contact'>
         <div className='contact__icon'>
           <a

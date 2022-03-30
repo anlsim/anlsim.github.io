@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
+import Hero from '../components/Hero'
 import NavBar from  '../components/Navigation/NavBar'
 import '../styles/about-me.scss'
 
@@ -7,7 +7,7 @@ const AboutMePage = (props) => {
   return (
     <>
       <NavBar />
-      <SectionTitle title={props.title} />
+      <Hero title={props.title} />
       <div className='container'>
         <div className='about-me'>
           <div className='about-me__img'></div>

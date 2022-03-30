@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/SectionTitle.scss'
+import '../styles/hero.scss'
 
-const SectionTitle = (props) => {
+const Hero = (props) => {
   return (
     <div className='hero'>
       <div className='hero__background'>
@@ -10,4 +10,4 @@ const SectionTitle = (props) => {
     </div>
   )
 }
-export default SectionTitle
+export default Hero
