@@ -2,7 +2,14 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import '../../styles/MenuItem.scss'
 
-const MenuItem = ({ title, history, linkUrl, match }) => (
+type Props = {
+  title:  string,
+  history: any,
+  linkUrl: string,
+  match: any
+}
+
+const MenuItem = ({ title, history, linkUrl, match }: Props) => (
     <div
       className='pentagon'
       onClick={() =>

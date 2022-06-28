@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import '../../styles/DirectoryMenu.scss'
 import MenuItem from './MenuItem'
 
-class DirectoryMenu extends Component {
-  constructor() {
-    super()
-    this.state = {
+const DirectoryMenu = () => {
+    const menuData = {
       sections: [
         {
           title: 'About Me',
@@ -29,18 +27,18 @@ class DirectoryMenu extends Component {
         },
       ],
     }
-  }
-  render() {
+  
+ 
     return (
       <div className='directory-menu'>
-        {this.state.sections.map(
+        {menuData.sections.map(
           ({ id, ...SectionProps }) => (
             <MenuItem key={id} {...SectionProps} />
           )
         )}
       </div>
     )
-  }
+  
 }
 
 export default DirectoryMenu
