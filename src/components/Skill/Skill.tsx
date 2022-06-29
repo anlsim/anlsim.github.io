@@ -2,13 +2,21 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import '../../styles/_custom-card.scss'
 
-const Skill = (props) => (
+type Props = {
+  title: string,
+  skillItem: {
+    name: string,
+    fAwesome: string,
+  }[]
+}
+
+const Skill = ({title, skillItem}) => (
   <div className='custom-card'>
     <div className='custom-card__header'>
-      <h2 className='custom-card__title'>{props.title}</h2>
+      <h2 className='custom-card__title'>{title}</h2>
     </div>
     <div className='custom-card__body'>
-      {props.skillItem.map((item, key) => {
+      {skillItem.map((item, key) => {
         return (
           <div key={key} className='custom-card__tools'>
             <i className={item.fAwesome}></i>
