@@ -5,13 +5,24 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import '../../styles/_custom-card.scss'
 import { faDesktop } from '@fortawesome/free-solid-svg-icons'
 
+type Props = {
+  title: string,
+  description: string,
+  linkUrl: string,
+  gitUrl: string,
+  tools: {
+    name: string,
+    fAwasome: string,
+  }[],
+}
+
 const Project = ({
   title,
   description,
   linkUrl,
   gitUrl,
   tools,
-}) => (
+}: Props) => (
   <div className='custom-card'>
     <div className='custom-card__header'>
       <h1 className='custom-card__title'>{title}</h1>
@@ -26,7 +37,9 @@ const Project = ({
         {tools.map((t, index) => {
           return (
             <>
-              <p className='custom-card__tools-description' key={index}>
+              <p
+                className='custom-card__tools-description'
+                key={index}>
                 {t.name}
               </p>
               <i className={t.fAwasome} />
