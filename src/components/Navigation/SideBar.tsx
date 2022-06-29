@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import '../../styles/SideBar.scss'
 
-export default function SideBar({
-  clicked,
-  handleClicked,
-}) {
+type Props = {
+  clicked: boolean,
+  handleClicked: any
+}
+
+const SideBar = ({ clicked, handleClicked }: Props) => {
   return (
     <>
       {clicked && (
@@ -35,3 +37,5 @@ export default function SideBar({
     </>
   )
 }
+
+export default SideBar
