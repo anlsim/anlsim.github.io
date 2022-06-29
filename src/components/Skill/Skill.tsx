@@ -6,11 +6,11 @@ type Props = {
   title: string,
   skillItem: {
     name: string,
-    fAwesome: string,
+    fAwesome?: string,
   }[]
 }
 
-const Skill = ({title, skillItem}: Props) => (
+const Skill = ({ title, skillItem }: Props) => (
   <div className='custom-card'>
     <div className='custom-card__header'>
       <h2 className='custom-card__title'>{title}</h2>

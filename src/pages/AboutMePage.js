@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import NavBar from  '../components/Navigation/NavBar'
+import NavBar from '../components/Navigation/NavBar'
 import '../styles/about-me.scss'
 
 const AboutMePage = (props) => {
