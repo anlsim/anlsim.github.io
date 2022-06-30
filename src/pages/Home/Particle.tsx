@@ -48,7 +48,6 @@ export default function Particle() {
             value: 3,
           },
         },
-        detectRetina: true,
         emitters: {
           direction: 'none',
           rate: {
