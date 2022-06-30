@@ -1,20 +1,21 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faLinkedin,
-  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import Hero from '../components/Hero'
 import NavBar from '../components/Navigation/NavBar'
 import '../styles/ContacPage.scss'
 
-const ContactPage = (props) => {
+type Props = {
+  title: string
+}
+
+const ContactPage = ({ title }: Props) => {
   return (
     <>
       <NavBar />
-
-      <Hero title={props.title} />
+      <Hero title={title} />
       <div className='contact'>
         <div className='contact__icon'>
           <a
