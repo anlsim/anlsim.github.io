@@ -1,13 +1,16 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import NavBar from '../components/Navigation/NavBar'
 import '../styles/about-me.scss'
 
-const AboutMePage = (props) => {
+type Props = {
+  title: string
+}
+
+const AboutMePage = ({ title }: Props) => {
   return (
     <>
       <NavBar />
-      <Hero title={props.title} />
+      <Hero title={title} />
       <div className='container'>
         <div className='about-me'>
           <div className='about-me__img'></div>
