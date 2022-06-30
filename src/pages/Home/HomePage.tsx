@@ -5,7 +5,7 @@ import Particle from './Particle'
 const HomePage = () => {
   return (
     <div className='homepage'>
-      <Particle/>
+      <Particle />
       <div className='homepage__header'>
         <h1 className='homepage__header--title'>
           Hi, I'm Andrea
