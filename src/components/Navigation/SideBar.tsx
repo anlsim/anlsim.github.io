@@ -3,7 +3,7 @@ import '../../styles/SideBar.scss'
 
 type Props = {
   clicked: boolean,
-  handleClicked: any
+  handleClicked?: any,
 }
 
 const SideBar = ({ clicked, handleClicked }: Props) => {
