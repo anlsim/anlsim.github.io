@@ -1,14 +1,16 @@
-import React from 'react'
 import NavBar from '../components/Navigation/NavBar'
 import ProjectMenu from '../components/Project/ProjectMenu'
 import Hero from '../components/Hero'
 import '../styles/ProjectPage.scss'
 
-const ProjectsPage = (props) => {
+type Props = {
+  title: string
+}
+const ProjectsPage = ({ title }: Props) => {
   return (
     <main>
       <NavBar />
-      <Hero title={props.title} />
+      <Hero title={title} />
       <ProjectMenu />
     </main>
   )

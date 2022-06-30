@@ -5,7 +5,7 @@ import SkillsMenu from '../components/Skill/SkillsMenu'
 type Props = {
   title: string
 }
-const SkillsPage = ({title}:Props) => {
+const SkillsPage = ({ title }: Props) => {
   return (
     <main>
       <NavBar />
