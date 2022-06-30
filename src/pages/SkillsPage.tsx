@@ -1,13 +1,15 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import NavBar from '../components/Navigation/NavBar'
 import SkillsMenu from '../components/Skill/SkillsMenu'
 
-const SkillsPage = (props) => {
+type Props = {
+  title: string
+}
+const SkillsPage = ({title}:Props) => {
   return (
     <main>
       <NavBar />
-      <Hero title={props.title} />
+      <Hero title={title} />
       <SkillsMenu />
     </main>
   )

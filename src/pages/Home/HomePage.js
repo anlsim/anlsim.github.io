@@ -1,7 +1,5 @@
-import React from 'react'
 import '../../styles/HomePage.scss'
 import DirectoryMenu from '../../components/Menu/DirectoryMenu'
-// import Particles from 'react-tsparticles'
 import Particle from './Particle'
 
 const HomePage = () => {
