@@ -39,7 +39,7 @@ const AboutMePage = ({ title }: Props) => {
           <p className='container__description'>
             Currently developing websites on a variety of
             platforms, using multiple frameworks and
-            programing languages.
+            programming languages.
           </p>
         </div>
         <div className='container__main'>
@@ -50,7 +50,7 @@ const AboutMePage = ({ title }: Props) => {
             Impakter • Internship
           </p>
           <p className='container__description'>
-            Design and develop the frontend of the
+            Design and develop the Frontend of the
             Certificates Tool application while utilizing
             reusable code with Vue.js and Bootstrap. to
             complete projects in the future. Designed UI
