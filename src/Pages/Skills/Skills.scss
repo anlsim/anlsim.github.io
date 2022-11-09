@@ -1,0 +1,25 @@
+@use '../../styles/varibles/media.scss' as m;
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  margin: var(--top-page-margin);
+  margin-inline: var(--inline-margin);
+  gap: 30px;
+}
+
+@media (min-width: m.$big-tablet) {
+  .skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media (min-width: m.$desktop) {
+  .skills {
+    max-width: 1024px;
+  }
+}

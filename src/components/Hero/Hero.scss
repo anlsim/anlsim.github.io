@@ -1,0 +1,25 @@
+@use '../../styles/varibles/colors.scss' as c;
+@use '../../styles/varibles/media.scss' as m;
+@use '../../styles/varibles/fonts' as f;
+
+.hero {
+  
+  padding: 20px;
+  background-color: c.$b-200;
+  border-radius:  0 0 30px 30px;
+
+  &__title {
+    font-size: f.$f-650;
+    font-weight: 500;
+    
+  }
+}
+
+@media(min-width: m.$big-tablet) {
+  .hero {
+    &__title {
+      font-size: f.$f-550  * 2;
+      margin-inline-start: var(--inline-margin);
+    }
+  }
+}
