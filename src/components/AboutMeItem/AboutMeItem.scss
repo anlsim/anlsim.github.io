@@ -1,0 +1,94 @@
+@use '../../styles/varibles/media.scss' as m;
+@use '../../styles/varibles/colors.scss' as c;
+@use '../../styles/varibles/fonts' as f;
+
+@keyframes slideInTop{
+  from {
+    margin-top: -90px;
+  }
+
+  to {
+    margin-top: -20px;
+  }
+}
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-block: 20px;
+  margin-inline: var(--inline-margin);
+  &__title {
+    padding: 20px;
+    font-size: f.$f-550;
+    line-height: f.$f-575;
+    background-color: c.$s-100;
+    border-radius:  0 0 30px 30px;
+    position: relative;
+    z-index: 100;
+  }
+  &__sectionItem {
+    padding: 40px 20px;
+    background-color: c.$b-400;
+    margin-block-end: 30px;
+    margin-block-start: -20px;
+    animation: slideInTop 0.75s ease both;
+  }
+  &__sectionTitle {
+    font-size: f.$f-450;
+    line-height: f.$f-475;
+  }
+  &__sectionSubtitle {
+    font-size: f.$f-425;
+    line-height: f.$f-450;
+  }
+  &__sectionDescription {
+    margin-block-start: 10px;
+  }
+
+  &__sectionList {
+    margin-block-start: 6px;
+    margin-inline-start: 24px;
+  }
+}
+
+@media (min-width: m.$tablet) {
+  .sectionContainer {
+    &__title {
+      font-size: f.$f-600;
+      line-height: f.$f-625;
+    }
+    &__sectionTitle {
+      font-size: f.$f-500;
+      line-height: f.$f-525;
+    }
+    &__sectionSubtitle {
+      font-size: f.$f-450;
+      line-height: f.$f-475;
+    }
+    &__sectionDescription, &__sectionList {
+      font-size: f.$f-425;
+      line-height: f.$f-450;
+    }
+  }
+}
+
+@media (min-width: m.$desktop) {
+  .sectionContainer {
+    &__title {
+      font-size: f.$f-625;
+      line-height: f.$f-650;
+    }
+    &__sectionTitle {
+      font-size: f.$f-550;
+      line-height: f.$f-575;
+    }
+    &__sectionSubtitle {
+      font-size: f.$f-475;
+      line-height: f.$f-500;
+    }
+    &__sectionDescription, &__sectionList  {
+      font-size: f.$f-450;
+      line-height: f.$f-475;
+    }
+  }
+  
+}

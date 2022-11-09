@@ -1,70 +1,33 @@
-import React from 'react'
-import { withRouter } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import '../../styles/_custom-card.scss'
-import { faDesktop } from '@fortawesome/free-solid-svg-icons'
+import './Project.scss'
 
 type Props = {
-  title: string,
-  description: string,
-  linkUrl: string,
-  gitUrl: string,
+  title: string
+  description: string
   tools: {
-    name: string,
-    fAwasome: string,
-  }[],
+    name: string
+    fAwasome: string
+  }[]
 }
-
-const Project = ({
-  title,
-  description,
-  linkUrl,
-  gitUrl,
-  tools,
-}: Props) => (
-  <div className='custom-card'>
-    <div className='custom-card__header'>
-      <h1 className='custom-card__title'>{title}</h1>
-    </div>
-    <div className='custom-card__body'>
-      <p className='project__description'>{description}</p>
-      <hr />
-      <h2 className='custom-card__body-title'>
-        Tools used
-      </h2>
-      <div className='custom-card__tools'>
-        {tools.map((t, index) => {
-          return (
-            <>
-              <p
-                className='custom-card__tools-description'
-                key={index}>
-                {t.name}
-              </p>
-              <i className={t.fAwasome} />
-            </>
-          )
-        })}
+const Project = ({ title, description, tools }: Props) => {
+  return (
+    <div className='project'>
+      <div className='project__header'>
+        <h2 className='project__title'>{title}</h2>
+      </div>
+      <div className='project__body'>
+        <p>{description}</p>
+         
+          <h3 className='project__bodyTitle'>Technology used</h3>
+          <div className={'project__tools'}>
+          {tools.map((tool, index) => (
+            <div key={index} className="project__icon">
+            <i className={tool.fAwasome}>{tool.name}</i>
+            </div>
+          ))}
+      </div>
       </div>
     </div>
-    <div className='custom-card__footer'>
-      <a
-        className='custom-card__footer-icon'
-        href={gitUrl}
-        target='blank'>
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-      {linkUrl && (
-        <a
-          className='custom-card__footer-icon'
-          href={linkUrl}
-          target='blank'>
-          <FontAwesomeIcon icon={faDesktop} />
-        </a>
-      )}
-    </div>
-  </div>
-)
+  )
+}
 
-export default withRouter(Project)
+export default Project

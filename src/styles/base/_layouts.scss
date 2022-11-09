@@ -1,0 +1,27 @@
+@use '../varibles/media.scss' as m;
+
+:root {
+  --inline-margin: 20px;
+  --top-page-margin: 24px;
+}
+
+@media (min-width: 576px) {
+
+  :root {
+    --inline-margin: 40px;
+    --top-page-margin: 40px;
+  }
+}
+
+@media (min-width: 850px) {
+  :root {
+    --inline-margin: 80px;
+    --top-page-margin: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --inline-margin: 20%;
+  }
+}

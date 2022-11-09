@@ -1,0 +1,62 @@
+@use '../../styles/varibles/media.scss' as m;
+@use '../../styles/varibles/fonts' as f;
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: var(--inline-margin);
+  margin-top: var( --top-page-margin);
+  
+
+  &__introImg {
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(../../Assets/profilePic.jpg);
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+  }
+  &__introTitle {
+    font-size: f.$f-600;
+    line-height: f.$f-600;
+  }
+  &__introDescription {
+
+  }
+
+  &__description {
+
+  }
+}
+@media (min-width: m.$tablet) {
+  .aboutMe {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__introImg {
+      min-width: 300px;
+    }
+    &__introTitle {
+      font-size: f.$f-650;
+      line-height: f.$f-650;
+    }
+    &__intro {
+      flex-grow: 1;
+      flex-basis: calc(50% - 22px);
+      margin: 10px;
+      min-width: 300px;
+    }
+  }
+}
+
+@media (min-width: m.$desktop) {
+  .aboutMe {
+    &__introTitle {
+      font-size: f.$f-700;
+      line-height: f.$f-700;
+    }
+  }
+}

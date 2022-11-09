@@ -1,29 +1,32 @@
-import './App.scss'
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import HomePage from './pages/Home/HomePage'
-import ProjectsPage from './pages/ProjectsPage'
-import ContactPage from './pages/ContactPage'
-import SkillsPage from './pages/SkillsPage'
-import AboutMePage from './pages/AboutMePage'
+import { Route, Routes, useLocation } from 'react-router-dom'
+
+import Home from './Pages/Home/Home'
+import ContactMe from './Pages/Contact/ContactMe'
+import Projects from './Pages/Projects/Projects'
+import Skills from './Pages/Skills/Skills'
+import AboutMe from './Pages/About/AboutMe'
+import NavBar from './Components/NavBar/NavBar'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
+  const location = useLocation();
   return (
-    <Router>
-      <Switch>
-      <Route path='/' exact> <HomePage /></Route>
-      <Route path='/projects' exact> <ProjectsPage title={'Projects'} /></Route>
-      <Route path='/contact' exact> <ContactPage title={'Contact Me'} /></Route>
-      <Route path='/skills' exact> <SkillsPage title={'Skills'} /></Route>
-      <Route path='/about' exact> <AboutMePage title={'About Me'} /></Route>
-      </Switch>
-    </Router>
+    <div className='pageContainer'>
+  <div className="contentWrap ">
+      {location.pathname === '/' ? null : <NavBar />}
+      
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<ContactMe />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/about' element={<AboutMe />} />
+      </Routes>
+      </div>
+      <Footer/>
+   
+    </div>
   )
 }
-
 
 export default App

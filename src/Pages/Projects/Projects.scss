@@ -1,0 +1,20 @@
+@use '../../styles/varibles/media.scss' as m;
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  margin: var(--top-page-margin);
+  margin-inline: var(--inline-margin);
+  gap: 30px;
+}
+
+@media (min-width: m.$big-tablet) {
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
