@@ -1,5 +1,5 @@
 import Hero from '../../Components/Hero/Hero'
-import Project from '../../Components/Project/Project'
+import Project from 'Components/Project/Project'
 
 import { projects } from './ProjectsData'
 

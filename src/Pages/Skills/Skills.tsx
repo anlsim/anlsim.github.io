@@ -1,5 +1,5 @@
 import Hero from "../../Components/Hero/Hero"
-import Skill from "../../Components/Skill/Skill"
+import Skill from '../../Components/Skill/Skill'
 import { skills } from './SkillsData'
 
 import './Skills.scss'

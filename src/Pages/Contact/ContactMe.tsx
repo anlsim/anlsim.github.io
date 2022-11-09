@@ -1,5 +1,4 @@
 import Hero from "../../Components/Hero/Hero"
-
 const ContactMe = () => {
   return (
     <div>

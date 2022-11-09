@@ -26,7 +26,7 @@ const NavBar = () => {
       </div>
       <MobileNav
         clicked={clicked}
-        handleClicked={handleClicked}></MobileNav>
+        handleClicked={handleClicked}/>
       <ul className='navbar__menu'>
           <Link to='/About'> <li className='navbar__links'>About Me </li></Link>
           <Link to='/projects'><li className='navbar__links'>Projects</li></Link>
