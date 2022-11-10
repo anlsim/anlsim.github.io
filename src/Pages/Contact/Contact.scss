@@ -1,0 +1,24 @@
+@use '../../styles/varibles/media.scss' as m;
+@use '../../styles/varibles/fonts' as f;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-inline: var(--inline-margin);
+  margin-top: var( --top-page-margin);
+  &__icon{
+    font-size: f.$f-700;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: m.$tablet) {
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
