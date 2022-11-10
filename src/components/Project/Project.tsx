@@ -37,19 +37,24 @@ const useStyles = createStyles((theme) => ({
 const Project = ({ title, description, tools }: Props) => {
   const { classes, theme } = useStyles();
   return (
-    <Card withBorder p="lg" radius="md" className={classes.card}>
+    <Card shadow='md' p="lg" radius="md" className={classes.card} >
       <Card.Section mb="sm">
 
       </Card.Section>
       <Badge>Categoria</Badge>
-      <Text weight={700} className={classes.title} mt="xs">
+      <Text weight={700} className={classes.title} mt="xs" size="lg">
         {title}
       </Text>
-      <Text size="sm" color="dimmed" lineClamp={4}>
+      <Text size="sm"  lineClamp={4}>
         {description}
       </Text>
       <Group mt="lg" >
         <Text size='md'> Technology used</Text>
+           {tools.map((tool, index) => (
+            <div key={index} className="project__icon">
+              <i className={tool.fAwasome}>{tool.name}</i>
+            </div>
+          ))}
       </Group>
       <Card.Section className={classes.footer}>
         <Group position="apart">
