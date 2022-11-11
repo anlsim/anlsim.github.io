@@ -1,5 +1,5 @@
 import {
-  Badge,
+  Image,
   Card,
   Text,
   createStyles,
@@ -22,6 +22,7 @@ type Props = {
   }[]
   gitUrl?: string
   webUrl?: string
+  imgUrl?: string
 }
 
 const useStyles = createStyles((theme) => ({
@@ -62,6 +63,7 @@ const Project = ({
   tools,
   gitUrl,
   webUrl,
+  imgUrl
 }: Props) => {
   const { classes, theme } = useStyles()
   return (
@@ -71,7 +73,7 @@ const Project = ({
       radius='md'
       className={classes.card}>
       <Card.Section mb='sm'>
-        
+        <Image src={imgUrl}  height={300} alt='a'/>
       </Card.Section>
       <Text
         weight={700}

@@ -25,6 +25,7 @@ const Projects = () => {
               tools={item.tools} 
               gitUrl={item.gitUrl}
               webUrl={item.linkUrl}
+              imgUrl={item.imgUrl}
             />
           ))
         }
