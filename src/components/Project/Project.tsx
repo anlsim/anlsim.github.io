@@ -70,8 +70,9 @@ const Project = ({
       p='lg'
       radius='md'
       className={classes.card}>
-      <Card.Section mb='sm'></Card.Section>
-      <Badge>Categoria</Badge>
+      <Card.Section mb='sm'>
+        
+      </Card.Section>
       <Text
         weight={700}
         className={classes.title}
