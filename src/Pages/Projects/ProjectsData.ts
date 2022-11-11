@@ -20,7 +20,7 @@ export const projects = [
         fAwasome: 'fab fa-node',
       },
       {
-        name: 'MongoDB',
+        name: 'Mongo',
         fAwasome: '',
       },
       {
@@ -73,7 +73,7 @@ export const projects = [
         fAwasome: '',
       },
       {
-        name: 'ASP.NET',
+        name: 'ASP',
         fAwasome: '',
       },
       {
@@ -104,7 +104,7 @@ export const projects = [
         fAwasome: '',
       },
       {
-        name: 'ASP.NET',
+        name: 'ASP',
         fAwasome: '',
       },
       {
