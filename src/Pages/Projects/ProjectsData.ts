@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Travel Blog',
     description:
-      'Built a Fullstack Travel Blog using React with Javascript for the Frontend and NodeJs with MongoDB for the backend, the blog is currently hosted with Heroku',
+      'Built a Fullstack Travel Blog, using React with Javascript for the Frontend and NodeJs with MongoDB for the backend, the blog is currently hosted with Heroku',
     imgUrl: '',
     id: 1,
     gitUrl: 'https://github.com/anlsim/travel-blog',

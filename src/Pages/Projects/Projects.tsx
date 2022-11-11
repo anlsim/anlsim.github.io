@@ -18,7 +18,14 @@ const Projects = () => {
         { maxWidth: 'xs', cols: 1, spacing: 'sm' }]}>
       {
           projects.map((item, id)=> (
-            <Project key={id} title={item.title} description={item.description} tools={item.tools}/>
+            <Project 
+              key={id}
+              title={item.title}
+              description={item.description} 
+              tools={item.tools} 
+              gitUrl={item.gitUrl}
+              webUrl={item.linkUrl}
+            />
           ))
         }
       </SimpleGrid>

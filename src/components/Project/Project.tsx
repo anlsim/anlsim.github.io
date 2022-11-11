@@ -1,5 +1,5 @@
 import { Badge, Card, Text, createStyles, Group, ActionIcon } from '@mantine/core'
-import { IconDeviceLaptop, IconBookmark, IconShare } from '@tabler/icons';
+import { IconDeviceLaptop, IconBrandGithub } from '@tabler/icons';
 import './Project.scss'
 
 type Props = {
@@ -9,6 +9,8 @@ type Props = {
     name: string
     fAwasome: string
   }[]
+  gitUrl?: string
+  webUrl?: string
 }
 
 const useStyles = createStyles((theme) => ({
@@ -34,7 +36,7 @@ const useStyles = createStyles((theme) => ({
     }`,
   },
 }));
-const Project = ({ title, description, tools }: Props) => {
+const Project = ({ title, description, tools, gitUrl, webUrl }: Props) => {
   const { classes, theme } = useStyles();
   return (
     <Card shadow='md' p="lg" radius="md" className={classes.card} >
@@ -59,9 +61,18 @@ const Project = ({ title, description, tools }: Props) => {
       <Card.Section className={classes.footer}>
         <Group position="apart">
         <Group spacing={0}>
-        <ActionIcon>
-          <IconDeviceLaptop size={30} color={theme.colors.yellow[7]} stroke={1.5}/>
-          </ActionIcon>
+          {
+            gitUrl && 
+            <ActionIcon component="a" href={gitUrl}>
+              <IconBrandGithub size={30} color={theme.colors.yellow[7]} stroke={1.5}/>
+            </ActionIcon>
+          }
+          {
+            webUrl && 
+            <ActionIcon component="a" href={webUrl}>
+              <IconDeviceLaptop size={30} color={theme.colors.yellow[7]} stroke={1.5}/>
+            </ActionIcon>
+          }
         </Group>
         </Group>
       </Card.Section>
