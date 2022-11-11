@@ -11,11 +11,11 @@ const Projects = () => {
   return (
     <div>
       <Hero title={'Projects'} />
-      <Container py={100} className='projects'>
-      <SimpleGrid cols={3} breakpoints={[ 
-        { maxWidth: 'md', cols: 3, spacing: 'md' },
-        { maxWidth: 'sm', cols: 2, spacing: 'sm' },
-        { maxWidth: 'xs', cols: 1, spacing: 'sm' }]}>
+      <div className='projects'>
+      <SimpleGrid cols={1} spacing={40} mt={0} breakpoints={[ 
+        { minWidth: 1080, cols: 2, spacing: 80 },
+        { minWidth: 760, cols: 2, spacing: 40 },
+        { minWidth: 1480, cols: 3, spacing: 40 },]}>
       {
           projects.map((item, id)=> (
             <Project 
@@ -30,7 +30,7 @@ const Projects = () => {
           ))
         }
       </SimpleGrid>
-      </Container >
+      </div >
       {/* <div className='projects'>
         
   
