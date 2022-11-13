@@ -73,7 +73,7 @@ const Project = ({
       radius='md'
       className={classes.card}>
       <Card.Section mb='sm'>
-        <Image src={imgUrl}  height={300} alt='a'/>
+        <Image src={imgUrl}  alt='a'/>
       </Card.Section>
       <Text
         weight={700}
