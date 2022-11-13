@@ -3,7 +3,7 @@ export const projects = [
     title: 'Travel Blog',
     description:
       'Built a Fullstack Travel Blog, using React with Javascript for the Frontend and NodeJs with MongoDB for the backend, the blog is currently hosted with Heroku',
-      imgUrl: './images/photoWebsite.png',
+      imgUrl: './images/travelBlog.png',
     id: 1,
     gitUrl: 'https://github.com/anlsim/travel-blog',
     tools: [
@@ -39,7 +39,7 @@ export const projects = [
     title: 'Personal Portfolio',
     description:
       'Built a web portfolio to show projects, skills, and other relevant information',
-    imgUrl: '../../Assets/taskTracker.png',
+    imgUrl: './images/travelBlog.png',
     id: 1,
     gitUrl:
       'https://github.com/anlsim/anlsim.github.io',
