@@ -48,13 +48,9 @@ const useStyles = createStyles((theme) => ({
     }),
   },
   footer: {
-    padding: `${theme.spacing.xs}px ${theme.spacing.lg}px`,
+    padding: `20px 20px`,
     marginTop: theme.spacing.md,
-    borderTop: `1px solid ${
-      theme.colorScheme === 'dark'
-        ? theme.colors.dark[5]
-        : theme.colors.gray[2]
-    }`,
+    borderTop: `1px solid #82C0CC`,
   },
 }))
 const Project = ({
@@ -103,18 +99,18 @@ const Project = ({
             {gitUrl && (
               <ActionIcon component='a' href={gitUrl}>
                 <IconBrandGithub
-                  size={30}
-                  color={theme.colors.yellow[7]}
-                  stroke={1.5}
+                  size={40}
+                  color='#FFA384'
+                  stroke={2}
                 />
               </ActionIcon>
             )}
             {webUrl && (
               <ActionIcon component='a' href={webUrl}>
                 <IconDeviceLaptop
-                  size={30}
-                  color={theme.colors.yellow[7]}
-                  stroke={1.5}
+                  size={40}
+                  color='#FFA384'
+                  stroke={2}
                 />
               </ActionIcon>
             )}
@@ -122,23 +118,6 @@ const Project = ({
         </Group>
       </Card.Section>
     </Card>
-    // <div className='project'>
-    //   <div className='project__header'>
-    //     <h2 className='project__title'>{title}</h2>
-    //   </div>
-    //   <div className='project__body'>
-    //     <p>{description}</p>
-
-    //       <h3 className='project__bodyTitle'>Technology used</h3>
-    //       <div className={'project__tools'}>
-    //       {tools.map((tool, index) => (
-    //         <div key={index} className="project__icon">
-    //         <i className={tool.fAwasome}>{tool.name}</i>
-    //         </div>
-    //       ))}
-    //   </div>
-    //   </div>
-    // </div>
   )
 }
 
