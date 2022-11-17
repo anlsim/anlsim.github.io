@@ -39,7 +39,7 @@ export const projects = [
     title: 'Personal Portfolio',
     description:
       'Built a web portfolio to show projects, skills, and other relevant information',
-    imgUrl: './images/travelBlog.png',
+    imgUrl: './images/portfolio.png',
     id: 1,
     gitUrl:
       'https://github.com/anlsim/anlsim.github.io',
