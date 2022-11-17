@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Travel Blog',
     description:
-      'Built a Fullstack Travel Blog, using React with Javascript for the Frontend and NodeJs with MongoDB for the backend, the blog is currently hosted with Heroku',
+      'Built a Fullstack Travel Blog, using React with Javascript for the Frontend and NodeJs with MongoDB for the backend, the blog is currently hosted with Heroku.',
       imgUrl: './images/travelBlog.png',
     id: 1,
     gitUrl: 'https://github.com/anlsim/travel-blog',
@@ -38,7 +38,7 @@ export const projects = [
   {
     title: 'Personal Portfolio',
     description:
-      'Built a web portfolio to show projects, skills, and other relevant information',
+      'Built a web portfolio to show projects, skills, and other relevant information. Used React with JavaScript for version 1, and upgraded to TypeScript for version 2.',
     imgUrl: './images/portfolio.png',
     id: 1,
     gitUrl:
@@ -125,7 +125,7 @@ export const projects = [
   {
     title: 'Photography Portfolio',
     description:
-      'Personal photography portfolio. Built with HTML and Bootstrap',
+      'Personal photography portfolio. Built only with HTML and Bootstrap as a helper for styles.',
     imgUrl: './images/photoWebsite.png',
     id: 4,
     gitUrl:
