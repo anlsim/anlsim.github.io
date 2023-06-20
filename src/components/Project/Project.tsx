@@ -61,7 +61,7 @@ const Project = ({
   webUrl,
   imgUrl
 }: Props) => {
-  const { classes, theme } = useStyles()
+  const { classes } = useStyles()
   return (
     <Card
       shadow='md'

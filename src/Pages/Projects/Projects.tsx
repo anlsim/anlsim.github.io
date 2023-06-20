@@ -1,4 +1,4 @@
-import { SimpleGrid, Card, Container } from '@mantine/core'
+import { SimpleGrid } from '@mantine/core'
 
 import Hero from '../../Components/Hero/Hero'
 import Project from 'Components/Project/Project'

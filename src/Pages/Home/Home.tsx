@@ -1,7 +1,6 @@
 import HomeMenuItem from '../../Components/HomeMenuItem/HomeMenuItem'
 
 import './Home.scss'
-import headerSvg from '../../Assets/header.svg'
 
 const menuData = [
   {
