@@ -24,7 +24,7 @@ const AboutMe = () => {
         {
           sections?.map((section, index) => {
             return(
-              <AboutMeItem title={section.title} items={section.items}/>
+              <AboutMeItem title={section.title} items={section.items} key={index}/>
             )
             
           })

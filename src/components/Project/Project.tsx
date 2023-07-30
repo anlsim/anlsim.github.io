@@ -63,7 +63,9 @@ const Project = ({
 }: Props) => {
   const { classes } = useStyles()
   return (
+    <div key={title}> 
     <Card
+      key={title  }
       shadow='md'
       p='lg'
       radius='md'
@@ -118,6 +120,7 @@ const Project = ({
         </Group>
       </Card.Section>
     </Card>
+    </div>
   )
 }
 

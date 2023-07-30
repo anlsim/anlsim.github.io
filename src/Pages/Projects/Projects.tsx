@@ -9,7 +9,7 @@ import './Projects.scss'
 
 const Projects = () => {
   return (
-    <div>
+    <>
       <Hero title={'Projects'} />
       <div className='projects'>
       <SimpleGrid cols={1} spacing={40} mt={0} breakpoints={[ 
@@ -19,7 +19,7 @@ const Projects = () => {
       {
           projects.map((item, id)=> (
             <Project 
-              key={id}
+              key={item.title}
               title={item.title}
               description={item.description} 
               tools={item.tools} 
@@ -31,11 +31,7 @@ const Projects = () => {
         }
       </SimpleGrid>
       </div >
-      {/* <div className='projects'>
-        
-  
-      </div> */}
-    </div>
+    </>
   )
 }
 

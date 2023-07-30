@@ -12,7 +12,7 @@ type Props = {
 
 const AboutMeItem = ({title, items}: Props) => {
   return (
-    <div className='sectionContainer'>
+    <div className='sectionContainer' key={title}>
       <h2 className='sectionContainer__title'>{title}</h2>
         {
          items?.map((item, index)=>{
