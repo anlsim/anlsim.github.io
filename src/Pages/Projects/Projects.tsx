@@ -17,7 +17,7 @@ const Projects = () => {
         { minWidth: 760, cols: 2, spacing: 40 },
         { minWidth: 1480, cols: 3, spacing: 40 },]}>
       {
-          projects.map((item, id)=> (
+          projects.map((item)=> (
             <Project 
               key={item.title}
               title={item.title}

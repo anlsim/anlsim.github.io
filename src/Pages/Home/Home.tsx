@@ -36,12 +36,12 @@ const Home = () => {
    <div className='home__bottom'></div>
    <div className='home'>
       <div className='home__menuItems'>
-      {menuData.map((item, index) => {
+      {menuData.map((item) => {
         return (
           <HomeMenuItem
             title={item.title}
             linkUrl={item.linkUrl}
-            key={index}
+            key={item.title}
           />
         )
       })}

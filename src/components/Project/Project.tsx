@@ -85,6 +85,7 @@ const Project = ({
       <Group mt='lg'>
         {tools.map((tool, index) => (
           <ThemeIcon 
+            key={index}
             radius="md" 
             size="xl"
             variant="gradient"

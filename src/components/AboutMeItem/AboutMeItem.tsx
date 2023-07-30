@@ -15,9 +15,9 @@ const AboutMeItem = ({title, items}: Props) => {
     <div className='sectionContainer' key={title}>
       <h2 className='sectionContainer__title'>{title}</h2>
         {
-         items?.map((item, index)=>{
+         items?.map((item)=>{
           return(
-            <div className='sectionContainer__sectionItem' key={index}>
+            <div className='sectionContainer__sectionItem' key={item.subItem_title}>
               <h3 className='sectionContainer__sectionTitle'>{item.subItem_title}</h3>
               <p className='sectionContainer__sectionSubtitle'>{item.subtitle}</p>
               <p className='sectionContainer__sectionDescription'>{item.description}</p>
@@ -25,9 +25,9 @@ const AboutMeItem = ({title, items}: Props) => {
                 item.listItems &&
                 <ul className='sectionContainer__sectionList'>
                   {
-                    item.listItems?.map((listItem, index)=> {
+                    item.listItems?.map((listItem)=> {
                       return(
-                        <li className='sectionContainer__sectionListItem'>{listItem}</li>
+                        <li key={listItem} className='sectionContainer__sectionListItem'>{listItem}</li>
                       )
                     })
                   }

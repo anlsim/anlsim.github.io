@@ -8,6 +8,7 @@ type Props = {
   }[]
 }
 
+
 const Skill = ({title, skillItem}: Props) => {
   return(
     <div className='skill'>

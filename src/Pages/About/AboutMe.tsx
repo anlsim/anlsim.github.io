@@ -22,9 +22,9 @@ const AboutMe = () => {
         </div>
         </div>
         {
-          sections?.map((section, index) => {
+          sections?.map((section) => {
             return(
-              <AboutMeItem title={section.title} items={section.items} key={index}/>
+              <AboutMeItem title={section.title} items={section.items} key={section.title}/>
             )
             
           })
